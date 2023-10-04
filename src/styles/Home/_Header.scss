@@ -1,25 +1,17 @@
 .home {
     &_header {
         &_carousel {
-            // height: 100vh;
-            // transform: translateY(-33px);
-
             &_img {
-                @include breakpoints-down (md) {
-                    transform: translateX(-680px);
-                }
+                width: 100%;
+                // @include breakpoints-down (md) {
+                //     transform: translateX(-680px);
+                // }
             }
-        //     .carousel-indicators {
-        //         // bottom: 140px;
-        // }
-        .carousel-caption {
-                bottom: 31.25rem;
-        }
         &_logo {
             min-width: 5rem !important;
+            }
         }
-}
-}
+    }
 }
 .carousel-control-prev, .carousel-control-next {
     display: none;

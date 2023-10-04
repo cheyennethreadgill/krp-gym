@@ -1,6 +1,6 @@
 .headers-info-jumbotron {
     position: relative;
-    
+    height: 400px;
     &_heading {
         position: absolute;
         z-index: 1;
@@ -14,7 +14,7 @@
         align-items: center;
 
     
-    img{
+    img {
         position : relative;
     }
 

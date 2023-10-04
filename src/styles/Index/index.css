@@ -12093,6 +12093,7 @@ textarea.form-control-lg {
   width: 100% !important;
   font-size: 1rem;
   position: relative;
+  color: white;
 }
 .form-control::-moz-placeholder {
   font-weight: 400;
@@ -12114,11 +12115,13 @@ textarea.form-control-lg {
 .form-control-light::-moz-placeholder {
   font-weight: 400;
   text-transform: uppercase;
+  opacity: 0.3;
   color: #eff0f3;
 }
 .form-control-light::placeholder {
   font-weight: 400;
   text-transform: uppercase;
+  opacity: 0.3;
   color: #eff0f3;
 }
 .form-control-light:hover {
@@ -12238,6 +12241,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .headers-info-jumbotron {
   position: relative;
+  height: 400px;
 }
 .headers-info-jumbotron_heading {
   position: absolute;
@@ -12346,13 +12350,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   transition: all ease 350ms;
 }
 
-@media screen and (max-width: 768px) {
-  .home_header_carousel_img {
-    transform: translateX(-680px);
-  }
-}
-.home_header_carousel .carousel-caption {
-  bottom: 31.25rem;
+.home_header_carousel_img {
+  width: 100%;
 }
 .home_header_carousel_logo {
   min-width: 5rem !important;

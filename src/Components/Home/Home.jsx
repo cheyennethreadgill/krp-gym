@@ -28,9 +28,9 @@ const Home = ({ cart, cartLength, darkMode, items, handleCartIncrease }) => {
         // cartTotal={increase}
         cartLength={cartLength}
         cart={cart}
-        // darkMode={false}
+        // darkMode
       />
-      <Header darkMode={darkMode} />
+      <Header />
       <Newsletter />
       <Routines />
       <HomeTrainer />

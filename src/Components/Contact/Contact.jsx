@@ -46,8 +46,8 @@ const Contact = ({ darkMode, cartLength }) => {
         <Container>
           <Row className=" text-light py-5 gap-5">
             <Col
-              lg="5"
-              sm=""
+              md="12"
+              lg="4"
               className="ms-lg-5"
             >
               <h3 className="pb-3 fs-1 fw-bold">
@@ -59,7 +59,10 @@ const Contact = ({ darkMode, cartLength }) => {
                 The point of using distribution of letters, as opposed to using.
               </p>
             </Col>
-            <Col lg="6">
+            <Col
+              md="12"
+              lg="6"
+            >
               <Form
                 noValidate
                 validated={validated}
@@ -73,6 +76,7 @@ const Contact = ({ darkMode, cartLength }) => {
                   >
                     <Form.Label>First name</Form.Label>
                     <Form.Control
+                      className="form-control-light"
                       required
                       type="text"
                       placeholder="First name"
@@ -86,6 +90,7 @@ const Contact = ({ darkMode, cartLength }) => {
                   >
                     <Form.Label>Last name</Form.Label>
                     <Form.Control
+                      className="form-control-light"
                       required
                       type="text"
                       placeholder="Last name"
@@ -100,6 +105,7 @@ const Contact = ({ darkMode, cartLength }) => {
                   >
                     <Form.Label>State</Form.Label>
                     <Form.Control
+                      className="form-control-light"
                       type="text"
                       placeholder="State"
                       required
@@ -116,7 +122,9 @@ const Contact = ({ darkMode, cartLength }) => {
                     <Button
                       type="submit"
                       variant="outline-light"
-                    ></Button>
+                    >
+                      <span></span>
+                    </Button>
                   </div>
                 </a>
               </Form>

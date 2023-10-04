@@ -11,3 +11,7 @@ only works if you add a span with hover
 <!-- REACT -->
 cart items deleting when opeinign link
     add Link from react instead of normal <a> tag
+
+<!-- Bootsrap & react links -->
+
+wrap Link in Nav.Link

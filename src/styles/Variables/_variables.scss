@@ -118,6 +118,7 @@ $color-border: #4040403d;
     @extend .btn-outline-dark;
     font-size: 1rem;
     position: relative;
+    color: white;
 
     &::placeholder {
         font-weight: 400;
@@ -138,7 +139,7 @@ $color-border: #4040403d;
     &::placeholder {
         font-weight: 400;
         text-transform: uppercase;
-        // opacity: .4;
+        opacity: .3;
         color: $light;
     }
 

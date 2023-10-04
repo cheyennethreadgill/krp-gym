@@ -15,8 +15,7 @@ import products from "../src/Products/products";
 const App = () => {
   const [cart, setCart] = useState([]);
   const [items, setItems] = useState(products);
-  // const [darkMode, setdarkMode] = useState(false);
-  var darkMode = false;
+  var darkMode = true;
 
   // Remove Item------------------------------------------
   function removeItem(id) {

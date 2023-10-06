@@ -12367,18 +12367,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   transition: all ease 350ms;
 }
 
-@media screen and (max-width: 576px) {
-  .carousel-item {
-    transform: translateX(-34%);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .home_header_carousel {
-    height: 100vh;
-    width: 1186px;
-  }
-}
 .home_header_carousel_img {
   width: 100%;
 }

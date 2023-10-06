@@ -16,7 +16,7 @@ cart items deleting when opening link
 
 wrap Link in Nav.Link
 
-<!-------------- full vh for carousel on mobile-->
+<!-------------- full vh for carousel on mobile SHOWS OVERFLOW-->
 <!-- in breakpoints down, set the width of the carousel to px until it fills the viewport height on mobile and ipad -->
 <!-- then set height & width of image to 100% -->
 <!-- then transform translatex the carosel item so its center in viewport-->

@@ -1,16 +1,16 @@
-.carousel-item {
-    @include breakpoints-down (sm) {
-    transform: translateX(-34%);
-    }
-}
+// .carousel-item {
+//     @include breakpoints-down (sm) {
+//     transform: translateX(-34%);
+//     }
+// }
 .home {
     &_header {
         &_carousel {
-            @include breakpoints-down (md) {
+            // @include breakpoints-down (md) {
                 
-                height: 100vh;
-                width: 1186px; 
-            }
+            //     height: 100vh;
+            //     width: 100vw; 
+            // }
             &_img {
                 width: 100%;
             //     // @include breakpoints-down (md) {

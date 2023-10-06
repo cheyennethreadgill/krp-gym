@@ -2,12 +2,24 @@
     transform: translate(787px, 40px);
     transition: all ease 300ms;
 }
-
+.navbar-collapse {
+      .navbar-nav {
+        a {
+          @include breakpoints-down (lg) {
+            color: $light;
+          }
+        }
+    }
+  }
 .main-nav {
-    // @include breakpoints-down (lg) {
-    //     background-color: $dark;
-    // }
-    
+    @include breakpoints-down (lg) {
+        background-color: $dark;
+
+        a {
+            color: $light;
+        }
+       
+    }
     &_logo_dark {
         filter: invert(1);
     }

@@ -12,9 +12,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 400px;
 
     
     img {
+        background-size: cover;
         position : relative;
     }
 

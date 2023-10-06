@@ -1,17 +1,16 @@
-import { Route, Routes } from "react-router-dom";
-import { Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import { Button } from "react-bootstrap";
-import Logo from "../../images/Global/logo.png";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
-import Cart from "../Cart/Cart";
-import MobileNav from './MobileNav';
+import { Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { Button } from 'react-bootstrap';
+import Logo from '../../images/Global/logo.png';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
+import Cart from '../Cart/Cart';
 
-const MainNav = ({ darkMode, cart, cartLength }) => {
+const MobileNav = ({ darkMode, cart, cartLength }) => {
   return (
     <section
       className={darkMode ? 'position-relative bg-dark ' : 'position-relative'}
@@ -53,8 +52,7 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
             <Nav className='  fw-semibold main-nav py-4 gap-3'>
               <Link
                 to='/'
-                className=''
-                // className={darkMode ? 'text-light' : 'text-dark'}
+                className='text-light'
               >
                 Home
                 <span>
@@ -64,8 +62,7 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
 
               <Link
                 to='/Team'
-                className=''
-                // className={darkMode ? 'text-light' : 'text-dark'}
+                className='text-light'
               >
                 Team
                 <span>
@@ -75,8 +72,7 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
 
               <Link
                 to='/PricingPlan'
-                className=''
-                // className={darkMode ? 'text-light' : 'text-dark'}
+                className='text-light'
               >
                 Pricing
                 <span>
@@ -86,8 +82,7 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
 
               <Link
                 to='/Contact'
-                className=''
-                // className={darkMode ? 'text-light' : 'text-dark'}
+                className='text-light'
               >
                 Contact
                 <span>
@@ -98,11 +93,16 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
             <Row>
               <Link
                 to='/Cart'
-                className=''
-                // className={darkMode ? 'text-light' : 'text-dark'}
+                className='text-light'
               >
                 Cart
-                <span className='pb-1 main-nav_link text-light fw-bold'>
+                <span
+                  className={
+                    darkMode
+                      ? 'pb-1 main-nav_link text-light fw-bold'
+                      : 'pb-1 main-nav_link text-primary fw-bold'
+                  }
+                >
                   ({cartLength})
                 </span>
                 <span>
@@ -117,4 +117,4 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
   );
 };
 
-export default MainNav;
+export default MobileNav;

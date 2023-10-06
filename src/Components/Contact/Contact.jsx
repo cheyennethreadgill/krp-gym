@@ -70,7 +70,7 @@ const Contact = ({ darkMode, cartLength }) => {
                 validated={validated}
                 onSubmit={handleSubmit}
               >
-                <Row className='mb-3'>
+                <Row className='mb-4'>
                   <Form.Group
                     as={Col}
                     md='6'
@@ -104,13 +104,15 @@ const Contact = ({ darkMode, cartLength }) => {
                   <Form.Group
                     as={Col}
                     controlId='validationCustom04'
+                    className='mb-2'
                   >
-                    <Form.Label>State</Form.Label>
+                    <Form.Label>Message</Form.Label>
                     <Form.Control
                       className='form-control-light'
-                      type='text'
-                      placeholder='State'
+                      as='textarea'
+                      placeholder='Notes'
                       required
+                      style={{ height: '200px' }}
                     />
                     <Form.Control.Feedback type='invalid'>
                       Please provide a valid state.

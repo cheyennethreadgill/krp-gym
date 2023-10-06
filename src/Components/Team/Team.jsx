@@ -99,7 +99,7 @@ const Team = ({ darkMode, cartLength }) => {
                   Find your perfect mentor! Join us!
                 </h5>
               </Form.Text>
-              <Row className='gap-3 gap-md-0'>
+              <Row className='gap-3 gap-lg-0'>
                 <Col
                   lg='4'
                   md='12'
@@ -125,7 +125,10 @@ const Team = ({ darkMode, cartLength }) => {
                   <a className=' btn-light'>
                     Subscribe
                     <div className='button-container'>
-                      <Button variant='outline-light'>
+                      <Button
+                        type='submit'
+                        variant='outline-light'
+                      >
                         <span></span>
                       </Button>
                     </div>

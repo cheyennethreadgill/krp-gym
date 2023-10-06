@@ -40,7 +40,7 @@ $color-border: #4040403d;
     }
 }
 .h1-secondary {
-    font-size: 3.75rem;
+    font-size: 3.75em;
 }
 // .fs-1 {
 //     font-size: 9.375rem ;
@@ -234,8 +234,8 @@ $color-border: #4040403d;
     
     &:hover {
         transform: none ;
-        color: $dark !important;
-        background-color: $light;
+        color: $light !important;
+        background-color: transparent;
     }
 }
 .btn-dark {

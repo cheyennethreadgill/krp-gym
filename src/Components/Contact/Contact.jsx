@@ -1,8 +1,9 @@
 import { useState } from "react";
-import PageHeadersInfo from "../Global/PageHeadersInfo";
-import MainNav from "../Global/MainNav";
-import header from "../../images/Team/Team-header.jpg";
-import members from "../Team/teamList";
+import MapGL from '../Utils/Map';
+import PageHeadersInfo from '../Global/PageHeadersInfo';
+import MainNav from '../Global/MainNav';
+import header from '../../images/Team/Team-header.jpg';
+import members from '../Team/teamList';
 import {
   Row,
   Col,
@@ -11,12 +12,11 @@ import {
   Button,
   Card,
   InputGroup,
-} from "react-bootstrap";
-import Image from "react-bootstrap/Image";
-import Footer from "../Global/Footer";
-import HeaderAccent from "../Global/headerAccent";
-import Socials from "../Global/socials";
-// import {useLoadScript}
+} from 'react-bootstrap';
+import Image from 'react-bootstrap/Image';
+import Footer from '../Global/Footer';
+import HeaderAccent from '../Global/headerAccent';
+import Socials from '../Global/socials';
 
 const Contact = ({ darkMode, cartLength }) => {
   const [validated, setValidated] = useState(false);
@@ -32,96 +32,98 @@ const Contact = ({ darkMode, cartLength }) => {
   };
 
   return (
-    <section className="contact">
+    <section className='contact'>
       <MainNav
         darkMode
         cartLength={cartLength}
       />
       <PageHeadersInfo
-        name="Contact Us"
-        img={require("../../images/Contact/contact-header.jpg")}
+        name='Contact Us'
+        img={require('../../images/Contact/contact-header.jpg')}
       />
-      <section className="map"></section>
-      <section className="bg-dark py-5">
+      <section style={{ height: '600px' }}>
+        <MapGL />
+      </section>
+      <section className='bg-dark py-5'>
         <Container>
-          <Row className=" text-light py-5 gap-5">
+          <Row className=' text-light py-5 gap-5'>
             <Col
-              md="12"
-              lg="4"
-              className="ms-lg-5"
+              md='12'
+              lg='4'
+              className='ms-lg-5'
             >
-              <h3 className="pb-3 fs-1 fw-bold">
+              <h3 className='pb-3 fs-1 fw-bold'>
                 Contact us and find your nearest gym
               </h3>
-              <p className="text-light">
+              <p className='text-light'>
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using distribution of letters, as opposed to using.
               </p>
             </Col>
             <Col
-              md="12"
-              lg="6"
+              md='12'
+              lg='6'
             >
               <Form
                 noValidate
                 validated={validated}
                 onSubmit={handleSubmit}
               >
-                <Row className="mb-3">
+                <Row className='mb-3'>
                   <Form.Group
                     as={Col}
-                    md="6"
-                    controlId="validationCustom01"
+                    md='6'
+                    controlId='validationCustom01'
                   >
                     <Form.Label>First name</Form.Label>
                     <Form.Control
-                      className="form-control-light"
+                      className='form-control-light'
                       required
-                      type="text"
-                      placeholder="First name"
+                      type='text'
+                      placeholder='First name'
                     />
                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                   </Form.Group>
                   <Form.Group
                     as={Col}
-                    md="6"
-                    controlId="validationCustom02"
+                    md='6'
+                    controlId='validationCustom02'
                   >
                     <Form.Label>Last name</Form.Label>
                     <Form.Control
-                      className="form-control-light"
+                      className='form-control-light'
                       required
-                      type="text"
-                      placeholder="Last name"
+                      type='text'
+                      placeholder='Last name'
                     />
                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                   </Form.Group>
                 </Row>
-                <Row className="mb-3">
+                <Row className='mb-3'>
                   <Form.Group
                     as={Col}
-                    controlId="validationCustom04"
+                    controlId='validationCustom04'
                   >
                     <Form.Label>State</Form.Label>
                     <Form.Control
-                      className="form-control-light"
-                      type="text"
-                      placeholder="State"
+                      className='form-control-light'
+                      type='text'
+                      placeholder='State'
                       required
                     />
-                    <Form.Control.Feedback type="invalid">
+                    <Form.Control.Feedback type='invalid'>
                       Please provide a valid state.
                     </Form.Control.Feedback>
                   </Form.Group>
                 </Row>
 
-                <a className="mt-3 btn-light">
+                <a className='mt-3 btn-light'>
                   See More
-                  <div className="button-container">
+                  <div className='button-container'>
                     <Button
-                      type="submit"
-                      variant="outline-light"
+                      type='submit'
+                      variant='outline-light'
                     >
                       <span></span>
                     </Button>

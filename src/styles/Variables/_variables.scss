@@ -118,7 +118,7 @@ $color-border: #4040403d;
     @extend .btn-outline-dark;
     font-size: 1rem;
     position: relative;
-    color: white;
+    color: white !important;
 
     &::placeholder {
         font-weight: 400;
@@ -186,7 +186,7 @@ $color-border: #4040403d;
 .btn-outline-dark {
     background-color: transparent;
     position: relative;
-    color: $dark !important;
+    color: $dark ;
     width: inherit;
     height: inherit;
     display: flex;
@@ -234,8 +234,8 @@ $color-border: #4040403d;
     
     &:hover {
         transform: none ;
-        color: $light !important;
-        background-color: transparent;
+        color: $dark !important;
+        background-color: $light;
     }
 }
 .btn-dark {

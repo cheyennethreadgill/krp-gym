@@ -12093,7 +12093,7 @@ textarea.form-control-lg {
   width: 100% !important;
   font-size: 1rem;
   position: relative;
-  color: white;
+  color: white !important;
 }
 .form-control::-moz-placeholder {
   font-weight: 400;
@@ -12162,7 +12162,7 @@ textarea.form-control-lg {
 .btn-outline-dark, .btn-dark, .form-control, .form-control-light {
   background-color: transparent;
   position: relative;
-  color: #131619 !important;
+  color: #131619;
   width: inherit;
   height: inherit;
   display: flex;
@@ -12205,8 +12205,8 @@ textarea.form-control-lg {
 }
 .btn-light:hover {
   transform: none;
-  color: #eff0f3 !important;
-  background-color: transparent;
+  color: #131619 !important;
+  background-color: #eff0f3;
 }
 
 .btn-dark {

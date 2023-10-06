@@ -12222,7 +12222,7 @@ textarea.form-control-lg {
 
 body {
   color: #000000;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 a, button {
@@ -12378,6 +12378,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     height: 100vh;
     width: 1186px;
   }
+}
+.home_header_carousel_img {
+  width: 100%;
 }
 @media screen and (max-width: 576px) {
   .home_header_carousel_logo {

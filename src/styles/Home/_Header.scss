@@ -11,12 +11,12 @@
                 height: 100vh;
                 width: 1186px; 
             }
-            // &_img {
-            //     // width: 100%;
+            &_img {
+                width: 100%;
             //     // @include breakpoints-down (md) {
             //     //     transform: translateX(-680px);
             //     // }
-            // }
+            }
             
         &_logo {
             @include breakpoints-down (sm) {

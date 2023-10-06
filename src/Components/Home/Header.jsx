@@ -24,7 +24,6 @@ const Header = ({ darkMode }) => {
               <Image
                 src={img.img}
                 className=' home_header_carousel_img'
-                style={{ height: '100%', width: '100%' }}
               />
               <Carousel.Caption className='home_header_carousel_caption '>
                 <h1 className='animate__animated animate__fadeIn'>

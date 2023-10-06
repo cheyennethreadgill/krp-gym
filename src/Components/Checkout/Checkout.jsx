@@ -87,7 +87,11 @@ const Checkout = ({ darkMode, cartLength, cart, grandTotal }) => {
                   </Form.Group>
                 </Col>
 
-                <Col className='mb-3'>
+                <Col
+                  className='mb-3'
+                  sm='12'
+                  lg='6'
+                >
                   <Form.Group
                     as={Col}
                     controlId='validationCustom04'

@@ -17,7 +17,7 @@ const Header = ({ darkMode }) => {
       >
         {headerImgs.map((img) => {
           return (
-            <Carousel.Item>
+            <Carousel.Item key={img.id}>
               <Image
                 src={img.img}
                 className=" home_header_carousel_img"

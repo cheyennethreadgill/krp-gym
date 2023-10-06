@@ -1,8 +1,10 @@
 import { Container } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap";
+import { useEffect, useState } from 'react';
+import products from '../../Products/products';
 
-import ProductComp from "../../Products/ProductComp";
+import ProductComp from '../../Products/ProductComp';
 
 const HomeShop = ({
   cart,
@@ -12,8 +14,8 @@ const HomeShop = ({
   handleCartIncrease,
 }) => {
   return (
-    <section className="home_shop position-relative pb-5 ">
-      <Container className="pt-5 pb-3">
+    <section className='home_shop position-relative pb-5 '>
+      <Container className='pt-5 pb-3'>
         {/* {cart.length > 0 ? (
           <div className="">
             <h1>View Your Cart</h1>
@@ -22,30 +24,31 @@ const HomeShop = ({
         ) : null} */}
         <span>
           <svg
-            className="qodef-svg--title-decoration qodef-title-decoration"
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            preserveAspectRatio="xMidYMid meet"
+            className='qodef-svg--title-decoration qodef-title-decoration'
+            xmlns='http://www.w3.org/2000/svg'
+            width='40'
+            height='40'
+            viewBox='0 0 40 40'
+            preserveAspectRatio='xMidYMid meet'
           >
-            <g transform="translate(-268 -1379)">
+            <g transform='translate(-268 -1379)'>
               <rect
-                width="40"
-                height="2"
-                transform="translate(268 1398)"
-                fill="currentColor"
+                width='40'
+                height='2'
+                transform='translate(268 1398)'
+                fill='currentColor'
               ></rect>
               <rect
-                width="40"
-                height="2"
-                transform="translate(289 1379) rotate(90)"
-                fill="currentColor"
+                width='40'
+                height='2'
+                transform='translate(289 1379) rotate(90)'
+                fill='currentColor'
               ></rect>
             </g>
           </svg>
         </span>
-        <h3 className="fs-1 fw-bold pb-3">Shop</h3>
+        <h3 className='fs-1 fw-bold pb-3'>Shop</h3>
+
         <Row>
           {items.map((item) => {
             return (
@@ -59,6 +62,20 @@ const HomeShop = ({
               />
             );
           })}
+          {/* {data
+            ? data.map((dat) => {
+                return (
+                  <ProductComp
+                    dat={dat}
+                    key={dat.id}
+                    cart={cart}
+                    // handleClick={handleClick}
+                    // cartTotal={cartTotal}
+                    handleCartIncrease={handleCartIncrease}
+                  />
+                );
+              })
+            : null} */}
         </Row>
       </Container>
     </section>

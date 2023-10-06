@@ -43,3 +43,11 @@ just do a popout cart
             contains animated arrow***
             border-radius 10rem ****
  -->
+
+ <!-- Team API 
+    for each person, find the if that matches the item id
+    then return that name
+ 
+    How can we map the names of each member from from an api while mapping through custom data
+ -->
+    

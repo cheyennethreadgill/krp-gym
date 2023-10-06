@@ -52,50 +52,45 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
           ></Navbar.Toggle>
           <Navbar.Collapse className="justify-content-between ">
             <Nav className="  fw-semibold main-nav py-4 gap-3">
-              <Nav.Link>
-                <Link
-                  to="/"
-                  className={darkMode ? "text-light" : "text-dark"}
-                >
-                  Home
-                  <span>
-                    <i className="d-lg-none fa-solid fa-angle-right"></i>
-                  </span>
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link
-                  to="/Team"
-                  className={darkMode ? "text-light" : "text-dark"}
-                >
-                  Team
-                  <span>
-                    <i className="d-lg-none fa-solid fa-angle-right"></i>
-                  </span>
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link
-                  to="/PricingPlan"
-                  className={darkMode ? "text-light" : "text-dark"}
-                >
-                  Pricing
-                  <span>
-                    <i className="d-lg-none fa-solid fa-angle-right"></i>
-                  </span>
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link
-                  to="/Contact"
-                  className={darkMode ? "text-light" : "text-dark"}
-                >
-                  Contact
-                  <span>
-                    <i className="d-lg-none fa-solid fa-angle-right"></i>
-                  </span>
-                </Link>
-              </Nav.Link>
+              <Link
+                to="/"
+                className={darkMode ? "text-light" : "text-dark"}
+              >
+                Home
+                <span>
+                  <i className="d-lg-none fa-solid fa-angle-right"></i>
+                </span>
+              </Link>
+
+              <Link
+                to="/Team"
+                className={darkMode ? "text-light" : "text-dark"}
+              >
+                Team
+                <span>
+                  <i className="d-lg-none fa-solid fa-angle-right"></i>
+                </span>
+              </Link>
+
+              <Link
+                to="/PricingPlan"
+                className={darkMode ? "text-light" : "text-dark"}
+              >
+                Pricing
+                <span>
+                  <i className="d-lg-none fa-solid fa-angle-right"></i>
+                </span>
+              </Link>
+
+              <Link
+                to="/Contact"
+                className={darkMode ? "text-light" : "text-dark"}
+              >
+                Contact
+                <span>
+                  <i className="d-lg-none fa-solid fa-angle-right"></i>
+                </span>
+              </Link>
             </Nav>
             <Row>
               <Link

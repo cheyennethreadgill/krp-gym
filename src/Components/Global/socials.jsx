@@ -5,19 +5,19 @@ const Socials = () => {
         className="text-white"
         href="https://www.instagram.com"
       >
-        <i class="fa-brands fa-instagram fs-5"></i>
+        <i className="fa-brands fa-instagram fs-5"></i>
       </a>
       <a
         className="text-white"
         href="https://www.twitter.com"
       >
-        <i class="fa-brands fa-twitter fs-5"></i>
+        <i className="fa-brands fa-twitter fs-5"></i>
       </a>
       <a
         className="text-white"
         href="https://www.tiktok.com"
       >
-        <i class="fa-brands fa-tiktok fs-5"></i>
+        <i className="fa-brands fa-tiktok fs-5"></i>
       </a>
     </div>
   );

@@ -5,7 +5,7 @@ import Image from "react-bootstrap/Image";
 const PageHeadersInfo = ({ name, img }) => {
   return (
     <section className=' text-light jumbotron headers-info-jumbotron'>
-      <div>
+      <div className='img-container'>
         <Image
           className='headers-info-jumbotron_img'
           src={img}

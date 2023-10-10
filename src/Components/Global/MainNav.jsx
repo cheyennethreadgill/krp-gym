@@ -13,11 +13,11 @@ import MobileNav from './MobileNav';
 
 const MainNav = ({ darkMode, cart, cartLength }) => {
   return (
-    <section
-      className={darkMode ? 'position-relative bg-dark ' : 'position-relative'}
-    >
+    <section className='position-relative '>
       <Navbar
         expand='lg'
+        bg={darkMode ? 'dark' : 'none'}
+        data-bs-theme={darkMode ? 'dark' : 'light'}
         className={
           darkMode
             ? 'main-nav py-4 position-initial z-3 w-100 '
@@ -53,8 +53,7 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
             <Nav className='  fw-semibold main-nav py-4 gap-3'>
               <Link
                 to='/'
-                className=''
-                // className={darkMode ? 'text-light' : 'text-dark'}
+                className='d-flex justify-content-between'
               >
                 Home
                 <span>
@@ -64,8 +63,7 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
 
               <Link
                 to='/Team'
-                className=''
-                // className={darkMode ? 'text-light' : 'text-dark'}
+                className='d-flex justify-content-between'
               >
                 Team
                 <span>
@@ -75,8 +73,7 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
 
               <Link
                 to='/PricingPlan'
-                className=''
-                // className={darkMode ? 'text-light' : 'text-dark'}
+                className='d-flex justify-content-between'
               >
                 Pricing
                 <span>
@@ -86,8 +83,7 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
 
               <Link
                 to='/Contact'
-                className=''
-                // className={darkMode ? 'text-light' : 'text-dark'}
+                className='d-flex justify-content-between'
               >
                 Contact
                 <span>
@@ -98,13 +94,12 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
             <Row>
               <Link
                 to='/Cart'
-                className=''
-                // className={darkMode ? 'text-light' : 'text-dark'}
+                className='d-flex justify-content-between fw-semibold'
               >
-                Cart
-                <span className='pb-1 main-nav_link text-light fw-bold'>
-                  ({cartLength})
-                </span>
+                Cart ({cartLength})
+                {/* <span className='pb-1 main-nav_link text-light '>
+                  
+                </span> */}
                 <span>
                   <i className='d-lg-none fa-solid fa-angle-right'></i>
                 </span>

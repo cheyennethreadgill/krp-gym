@@ -25,7 +25,7 @@ $color-border: #4040403d;
     padding: 0 1.5rem;
 }
 
-// Typography
+// ---------------------------------------------------Typography
 .h1-primary {
     font-size: 2.375rem;
 
@@ -40,28 +40,19 @@ $color-border: #4040403d;
     }
 }
 .h1-secondary {
-    font-size: 3.75em;
+    
+    font-size: 2.375rem;
+    
+    @include breakpoints-up (md) {
+        font-size: 3.75em;
+    }
 }
-// .fs-1 {
-//     font-size: 9.375rem ;
-// }
-// .fs-2 {
-//     font-size: 3.75rem ;
-// }
-// .fs-3 {
-//     font-size: 2.5rem ;
-// }
-// .fs-4 {
-//     font-size: 1.875rem ;
-// }
-// .fs-5 {
-//     font-size: 1.375rem;
-// }
-// .fs-6 {
-//     font-size: 1.25rem;
-// }
+// --------------------------------------------------------Color
+[data-bs-theme="dark"] {
+    --bs-link-color-rgb: 255, 255, 255; 
+}
 
-// Sizing------
+//------------------------------------ Sizing------
 .bottom-30 {
     bottom: 30vh;
 }
@@ -71,7 +62,7 @@ $color-border: #4040403d;
 .bottom-40 {
     bottom: 40vh;
 }
-// nav---------
+// -----------------------------------------nav---------
 .navbar-toggler {
     border: var(--bs-border-width) solid rgb(255 255 255);
     border-radius: 10em;

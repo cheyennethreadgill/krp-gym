@@ -24,13 +24,10 @@ const Home = ({ cart, cartLength, darkMode, items, handleCartIncrease }) => {
 
   return (
     <section>
-      <MainNav
-        // cartTotal={increase}
+      <Header
         cartLength={cartLength}
         cart={cart}
-        // darkMode
       />
-      <Header />
       <Newsletter />
       <Routines />
       <HomeTrainer />

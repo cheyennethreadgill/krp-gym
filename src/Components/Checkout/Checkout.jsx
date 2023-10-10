@@ -104,7 +104,7 @@ const Checkout = ({ darkMode, cartLength, cart, grandTotal }) => {
                       className='form-control-light'
                       as='textarea'
                       style={{ height: '150px' }}
-                      placeholder='State'
+                      placeholder='Notes'
                     />
                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                   </Form.Group>

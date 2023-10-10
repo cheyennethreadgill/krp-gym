@@ -6,7 +6,7 @@ const ProductComp = ({ cart, item, handleClick, handleCartIncrease }) => {
   const { id, name, price, img, category } = item;
   return (
     <Col
-      className='pb-5'
+      className='pb-5 d-flex align-items-stretch'
       lg='3'
       md='6'
       sm='12'
@@ -37,10 +37,10 @@ const ProductComp = ({ cart, item, handleClick, handleCartIncrease }) => {
           </div>
         </div>
         <Card.Body className=''>
-          <Card.Text>{name}</Card.Text>
+          <Card.Text>{category}</Card.Text>
           <div className='d-flex  gap-5 justify-content-between'>
             <Card.Title>
-              <h4 className='fs-4 fw-bold'>{category}</h4>
+              <h4 className='fs-4 fw-bold'>{name}</h4>
             </Card.Title>
             <p className='fs-5 fw-medium'>${price}</p>
           </div>

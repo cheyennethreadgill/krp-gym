@@ -12071,7 +12071,6 @@ textarea.form-control-lg {
 .navbar-toggler-icon {
   width: 1em;
   height: 1.7em;
-  filter: invert(1);
 }
 
 .input-container {
@@ -12442,6 +12441,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   right: 10%;
   z-index: 5;
 }
+@media screen and (max-width: 1200px) {
+  .team_members_info svg {
+    top: -44%;
+    right: -4%;
+  }
+}
 .team_members_info svg {
   opacity: 0;
   width: 6rem;
@@ -12459,6 +12464,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     position: absolute;
     top: 53%;
     left: 22%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .team_members_info_socials_icons {
+    position: absolute;
+    top: 53%;
+    left: 8%;
   }
 }
 .team_members_info_bio {

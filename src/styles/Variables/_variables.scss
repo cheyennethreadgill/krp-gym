@@ -24,7 +24,17 @@ $color-border: #4040403d;
 .container {
     padding: 0 1.5rem;
 }
+// ---------------------------------------------------IMAGES
+// .img-container {
+//     width: 180px;
+//     height: 100%;
 
+//     img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//     }
+// }
 // ---------------------------------------------------Typography
 .h1-primary {
     font-size: 2.375rem;
@@ -70,7 +80,6 @@ $color-border: #4040403d;
     &-icon {
             width: 1em;
             height: 1.7em;
-            filter: invert(1);
     }
 }
 // forms------------------------------------------------------------------------------------------------

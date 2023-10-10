@@ -29,13 +29,13 @@ const Team = ({ darkMode, cartLength }) => {
           </h2>
           <h5 className='fw-light'>Find your perfect mentor! Join us!</h5>
           {/* ROW--------------------------------------------------------- */}
-          <Row className=' py-5 team_members_container'>
+          <Row className=' py-5 team_members_container justify-content-md-center'>
             {/* Memebers map backup---------------------------------------------- */}
             {members.map((person) => {
               return (
                 <Col
                   lg='4'
-                  md='12'
+                  md='3'
                   sm='12'
                   className='team_members_info '
                 >

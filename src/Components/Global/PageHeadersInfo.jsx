@@ -7,6 +7,7 @@ const PageHeadersInfo = ({ name, img }) => {
     <section className=' text-light jumbotron headers-info-jumbotron'>
       <div className='img-container'>
         <Image
+          alt={name}
           className='headers-info-jumbotron_img'
           src={img}
         ></Image>

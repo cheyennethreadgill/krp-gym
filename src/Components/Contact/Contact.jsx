@@ -121,9 +121,10 @@ const Contact = ({ darkMode, cartLength }) => {
                 </Row>
 
                 <a className='mt-3 btn-light'>
-                  See More
+                  Send
                   <div className='button-container'>
                     <Button
+                      aria-label='Send'
                       type='submit'
                       variant='outline-light'
                     >
@@ -143,69 +144,3 @@ const Contact = ({ darkMode, cartLength }) => {
 };
 
 export default Contact;
-
-{
-  /* <Container className="py-5">
-          <Row className=" text-light py-5 gap-5">
-            <Col
-              lg="4"
-              sm=""
-              className="ms-lg-5"
-            >
-              <h3 className="pb-3 fs-1 fw-bold">
-                Contact us and find your nearest gym
-              </h3>
-              <p className="text-light">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using distribution of letters, as opposed to using.
-              </p>
-            </Col>
-            <Col lg="7">
-              <Form
-                noValidate
-                validated={validated}
-                onSubmit={handleSubmit}
-                className="text-light "
-              >
-                <Form.Group className="text-center ">
-                  <Row className="pb-4">
-                    <Col>
-                      <Form.Control
-                        required
-                        className=""
-                        placeholder="Name"
-                      ></Form.Control>
-                    </Col>
-                    <Col>
-                      <Form.Control
-                        required
-                        className=""
-                        placeholder="Email"
-                      ></Form.Control>
-                    </Col>
-                  </Row>
-                  <Row className="pb-4">
-                    <Col>
-                      <Form.Control
-                        required
-                        className=""
-                        placeholder="Your Message"
-                        as="textarea"
-                        style={{ height: "10rem" }}
-                      ></Form.Control>
-                    </Col>
-                  </Row>
-                </Form.Group>
-              </Form>
-
-              <Button
-                type="submit"
-                className="btn-main-light border-white fs-6"
-              >
-                See More
-              </Button>
-            </Col>
-          </Row>
-        </Container> */
-}

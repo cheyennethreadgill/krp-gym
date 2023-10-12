@@ -71,12 +71,12 @@ const Team = ({ darkMode, cartLength }) => {
                   </div>
 
                   <Image
+                    alt={person.lname + ' ' + person.fname}
                     fluid
                     width='180'
                     roundedCircle
                     className='team_members_info_img'
                     src={person.img}
-                    alt={person.lname + '' + person.position}
                   />
                 </Col>
               );
@@ -126,6 +126,7 @@ const Team = ({ darkMode, cartLength }) => {
                     Subscribe
                     <div className='button-container'>
                       <Button
+                        aria-label='Subscribe to newsleter'
                         type='submit'
                         variant='outline-light'
                       >

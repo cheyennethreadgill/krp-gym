@@ -68,17 +68,17 @@ const Cart = ({
                   <hr></hr>
 
                   {/* NAME DELETE------------------------------------------------------------------ */}
-                  <Row className="mb-4 align-items-center">
+                  <Row className='mb-4 align-items-center'>
                     <Col
-                      lg="4"
-                      md="5"
-                      sm="8"
-                      xs="8"
-                      className="d-flex gap-4 align-items-center"
+                      lg='4'
+                      md='5'
+                      sm='8'
+                      xs='8'
+                      className='d-flex gap-4 align-items-center'
                     >
                       <Button
-                        variant="light"
-                        className=" text-light fw-normal remove border-0 pe-3"
+                        variant='light'
+                        className=' text-light fw-normal remove border-0 pe-3'
                         onClick={() => {
                           removeItem(item.id);
                           // console.log(item);
@@ -87,55 +87,57 @@ const Cart = ({
                         x
                       </Button>
                       <Image
-                        className="d-none d-lg-block"
+                        alt={item.name}
+                        className='d-none d-lg-block'
                         src={item.img}
                         width={75}
+                        height='100%'
                       ></Image>
-                      <h5 className="fw-light">{item.name}</h5>
+                      <h5 className='fw-light'>{item.name}</h5>
                     </Col>
                     {/* PRICE -------------------------------------------------------------------- */}
                     <Col
-                      className=""
-                      lg="2"
-                      md="1"
-                      sm="1"
-                      xs="3"
+                      className=''
+                      lg='2'
+                      md='1'
+                      sm='1'
+                      xs='3'
                     >
                       ${item.price}
                     </Col>
                     {/* INPUT -------------------------------------------------------------------- */}
 
                     <Col
-                      lg="4"
-                      md="5"
-                      className="d-flex gap-3"
+                      lg='4'
+                      md='5'
+                      className='d-flex gap-3'
                     >
                       <Button
                         onClick={() => {
                           decreaseQty(item);
                         }}
-                        className="btn btn-light px-3 py-2 btn-light text-light add"
+                        className='btn btn-light px-3 py-2 btn-light text-light add'
                       >
                         -
                       </Button>
                       <Form.Control
                         placeholder={item.quantity}
-                        className="form-control-light"
+                        className='form-control-light'
                       ></Form.Control>
                       <Button
                         onClick={() => {
                           increaseQty(item);
                         }}
-                        className="btn btn-light px-3 py-2 btn-light text-light subtract"
+                        className='btn btn-light px-3 py-2 btn-light text-light subtract'
                       >
                         +
                       </Button>
                     </Col>
                     {/* TOTAL-------------------------------------------------------------------- */}
                     <Col
-                      lg="2"
-                      md="1"
-                      className="d-none d-lg-block"
+                      lg='2'
+                      md='1'
+                      className='d-none d-lg-block'
                     >
                       ${(item.price * item.quantity).toFixed(2)}
                     </Col>

@@ -30,6 +30,7 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
         >
           <Navbar.Brand className='d-none d-lg-block'>
             <Image
+              alt='Company Logo'
               src={Logo}
               width={150}
               className={
@@ -40,15 +41,19 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
 
           <Navbar.Brand className='d-lg-none'>
             <Image
+              alt='Company Logo'
               src={Logo}
               width={120}
               className='main-nav_mobile_logo '
             />
           </Navbar.Brand>
+
           <Navbar.Toggle
+            aria-label='Mobile Toggle Button'
             className=' main-nav_toggle'
-            aria-controls='responsive-navbar-nav'
+            // aria-controls='responsive-navbar-nav'
           ></Navbar.Toggle>
+
           <Navbar.Collapse className='justify-content-between '>
             <Nav className='  fw-semibold main-nav py-4 gap-3'>
               <Link

@@ -22,7 +22,10 @@ const ProductComp = ({ cart, item, handleClick, handleCartIncrease }) => {
               <Button
                 variant='outline-primary'
                 className=''
-                id='add-to-cart'
+                // -------------------------------------------------------------is this correct?
+                name='Add to Cart'
+                title='Add To Cart'
+                id={`Add ${name} to Cart`}
                 onClick={() => {
                   // handleClick(item.price);
                   // console.log(item);

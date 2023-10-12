@@ -26,6 +26,8 @@ const Header = ({ darkMode, cartLength, cart }) => {
               key={img.id}
             >
               <Image
+                // ----------------------------------------------------Add title property name to header image list
+                alt={img.title}
                 src={img.img}
                 className=' home_header_carousel_img'
               />
@@ -43,7 +45,10 @@ const Header = ({ darkMode, cartLength, cart }) => {
                 >
                   View More
                   <div className='button-container'>
-                    <Button variant='outline-dark'>
+                    <Button
+                      aria-label='View More Pricing Plans'
+                      variant='outline-dark'
+                    >
                       <span></span>
                     </Button>
                   </div>
@@ -53,24 +58,6 @@ const Header = ({ darkMode, cartLength, cart }) => {
           );
         })}
       </Carousel>
-      {/* <div className='mobile-header '>
-        <Image
-          fluid
-          className='position-relative z-0'
-          src={fd}
-        />
-        <a
-          href='/PricingPlan'
-          className='position-absolute  z-1 btn-dark m-0 m-auto animate__animated animate__fadeInUp animate__delay-1s'
-        >
-          View More
-          <div className='button-container'>
-            <Button variant='outline-dark'>
-              <span></span>
-            </Button>
-          </div>
-        </a>
-      </div> */}
     </section>
   );
 };

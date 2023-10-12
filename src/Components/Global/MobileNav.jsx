@@ -29,6 +29,7 @@ const MobileNav = ({ darkMode, cart, cartLength }) => {
         >
           <Navbar.Brand className='d-none d-lg-block'>
             <Image
+              alt='Company Logo'
               src={Logo}
               width={150}
               className={
@@ -39,6 +40,7 @@ const MobileNav = ({ darkMode, cart, cartLength }) => {
 
           <Navbar.Brand className='d-lg-none'>
             <Image
+              alt='Company Logo'
               src={Logo}
               width={120}
               className='main-nav_mobile_logo '

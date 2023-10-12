@@ -26,10 +26,11 @@ const Newsletter = () => {
                     placeholder='Email'
                     className=''
                   ></Form.Control>
-                  {/* <InputGroup.Text className="d-flex justify-content-center align-items-center"></InputGroup.Text> */}
                   <div className='button-container'>
                     <Button
+                      name='Subscribe'
                       variant='outline-dark'
+                      aria-label='Subsribe to Newsletter'
                       type='submit'
                       className=''
                     >

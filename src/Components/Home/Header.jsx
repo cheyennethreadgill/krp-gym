@@ -2,7 +2,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Image from 'react-bootstrap/Image';
-import headerImgs from './headerImgs';
+import headerImgs from '../../data/headerImgs';
 import sliderlogo from '../../images/Home/header/slider-logo.png';
 import MainNav from '../Global/MainNav';
 
@@ -26,7 +26,8 @@ const Header = ({ darkMode, cartLength, cart }) => {
               key={img.id}
             >
               <Image
-                // ----------------------------------------------------Add title property name to header image list
+                height='100%'
+                width='100%'
                 alt={img.title}
                 src={img.img}
                 className=' home_header_carousel_img'
@@ -34,6 +35,8 @@ const Header = ({ darkMode, cartLength, cart }) => {
               <Carousel.Caption className='home_header_carousel_caption '>
                 <h1 className='animate__animated animate__fadeIn'>
                   <Image
+                    height='100%'
+                    width='100%'
                     src={sliderlogo}
                     alt='logo'
                     className='px-3 home_header_carousel_logo '

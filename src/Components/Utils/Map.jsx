@@ -31,7 +31,7 @@ const MapGL = () => {
         anchor='bottom'
       >
         <i
-          class='fa-solid fa-location-dot fs-1'
+          className='fa-solid fa-location-dot fs-1'
           style={{ color: '#ffffff' }}
         ></i>
         ;

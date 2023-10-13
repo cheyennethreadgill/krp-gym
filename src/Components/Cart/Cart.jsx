@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Footer from "../Global/Footer";
 import { Row, Col, Image, Container, Button } from "react-bootstrap";
 import { InputGroup, Input, Form } from "react-bootstrap";
-import products from "../../Products/products";
+import products from '../../data/products';
 import MainNav from "../Global/MainNav";
 import PageHeaders from "../Global/PageHeaders";
 

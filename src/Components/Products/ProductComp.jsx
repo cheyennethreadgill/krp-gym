@@ -1,6 +1,6 @@
-import { Row, Col, Button } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
-import Card from "react-bootstrap/Card";
+import { Row, Col, Button } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image';
+import Card from 'react-bootstrap/Card';
 
 const ProductComp = ({ cart, item, handleClick, handleCartIncrease }) => {
   const { id, name, price, img, category } = item;
@@ -14,8 +14,11 @@ const ProductComp = ({ cart, item, handleClick, handleCartIncrease }) => {
       <Card>
         <div className='home_shop_inner-overlay_container '>
           <Card.Img
+            alt={name}
             src={img}
             className='img-fluid'
+            width='100%'
+            height='100%'
           ></Card.Img>
           <div className='home_shop_inner-overlay_container_body'>
             <Card.Link>

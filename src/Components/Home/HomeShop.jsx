@@ -2,9 +2,9 @@ import { Container } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap";
 import { useEffect, useState } from 'react';
-import products from '../../Products/products';
+import products from '../../data/products';
 
-import ProductComp from '../../Products/ProductComp';
+import ProductComp from '../Products/ProductComp';
 
 const HomeShop = ({
   cart,

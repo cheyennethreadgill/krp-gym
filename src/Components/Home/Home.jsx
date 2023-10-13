@@ -5,7 +5,7 @@ import Routines from "./Routines";
 import HomeShop from "./HomeShop";
 import HomeTrainer from "./HomeTrainer";
 import Footer from "../Global/Footer";
-import products from "../../Products/products";
+import products from '../../data/products';
 import { useState } from "react";
 import Cart from "../Cart/Cart";
 

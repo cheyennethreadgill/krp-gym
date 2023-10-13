@@ -89,6 +89,8 @@ const HomeTrainer = () => {
                 fluid
                 src={trainer}
                 className=''
+                width='100%'
+                height='100%'
               ></Image>
               <h2 className='h1-secondary fw-bold '>
                 Meet <br></br> Sarah

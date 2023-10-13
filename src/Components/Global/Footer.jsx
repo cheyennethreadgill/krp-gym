@@ -20,6 +20,8 @@ const Footer = () => {
               fluid
               src={logo}
               className='mb-3 mb-lg-5  pb-lg-4'
+              width='100%'
+              height='100%'
             ></Image>
           </Col>
 
@@ -74,12 +76,12 @@ const Footer = () => {
               <Col lg='4'>
                 <Form name='Subscribe'>
                   <Form.Group>
-                    <Form.Label for='email'>
+                    <Form.Label htmlFor='email'>
                       <h2 className='fs-4 fw-bold text-uppercase'>Start Now</h2>
                     </Form.Label>
                     <div className='input-container'>
                       <Form.Control
-                        name='email'
+                        id='email'
                         type='email'
                         placeholder='Email'
                         className='form-control-light'

@@ -16,7 +16,7 @@ const Newsletter = () => {
           >
             <Form>
               <Form.Group>
-                <Form.Label for='email'>
+                <Form.Label htmlFor='email'>
                   <HeaderAccent />
                   <h2 className=' fs-1 fw-bold text-uppercase'>Newsletter</h2>
                 </Form.Label>

@@ -16,6 +16,8 @@ const Routines = () => {
             <Image
               alt='Picture of Abs'
               src={image1}
+              width='100%'
+              height='100%'
             ></Image>
             <h3 className='fs-2 fw-bold'>Abs</h3>
           </Col>
@@ -23,6 +25,8 @@ const Routines = () => {
             <Image
               alt='Picture of a back'
               src={image2}
+              width='100%'
+              height='100%'
             ></Image>
             <h3 className='fs-2 fw-bold'>back</h3>
           </Col>
@@ -30,6 +34,8 @@ const Routines = () => {
             <Image
               alt='Picture of arms'
               src={image3}
+              width='100%'
+              height='100%'
             ></Image>
             <h3 className='fs-2 fw-bold'>arms</h3>
           </Col>
@@ -37,6 +43,8 @@ const Routines = () => {
             <Image
               alt='Picture of legs'
               src={image4}
+              width='100%'
+              height='100%'
             ></Image>
             <h3 className='fs-2 fw-bold'>legs</h3>
           </Col>
@@ -44,6 +52,8 @@ const Routines = () => {
             <Image
               alt='Picture of shoulders'
               src={image5}
+              width='100%'
+              height='100%'
             ></Image>
             <h3 className='fs-2 fw-bold'>shoulders</h3>
           </Col>

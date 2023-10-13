@@ -10,7 +10,7 @@ import Team from "./Components/Team/Team";
 import Cart from "./Components/Cart/Cart";
 import MainNav from "./Components/Global/MainNav";
 import Rout from "./Components/Global/Rout";
-import products from "../src/Products/products";
+import products from '../src/data/products';
 
 const App = () => {
   const [cart, setCart] = useState([]);

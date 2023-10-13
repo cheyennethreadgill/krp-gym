@@ -16,16 +16,19 @@ const Newsletter = () => {
           >
             <Form>
               <Form.Group>
-                <Form.Label>
+                <Form.Label for='email'>
                   <HeaderAccent />
                   <h2 className=' fs-1 fw-bold text-uppercase'>Newsletter</h2>
                 </Form.Label>
                 <div className='input-container'>
                   <Form.Control
+                    name='email'
                     type='email'
                     placeholder='Email'
                     className=''
+                    autoComplete='true'
                   ></Form.Control>
+
                   <div className='button-container'>
                     <Button
                       name='Subscribe'

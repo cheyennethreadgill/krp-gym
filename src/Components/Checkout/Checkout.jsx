@@ -38,7 +38,7 @@ const Checkout = ({ darkMode, cartLength, cart, grandTotal }) => {
                     md='6'
                     controlId='validationCustom01'
                   >
-                    <Form.Label>
+                    <Form.Label name='Checkout'>
                       <h1 className='fs-3'>Billing Details</h1>
                     </Form.Label>
                     <p className='text-light mb-2'>First Name:</p>
@@ -96,7 +96,7 @@ const Checkout = ({ darkMode, cartLength, cart, grandTotal }) => {
                     as={Col}
                     controlId='validationCustom04'
                   >
-                    <Form.Label>
+                    <Form.Label name='Additional Info'>
                       <h1 className='fs-3'>Additional Information</h1>
                     </Form.Label>
                     <p className='text-light mb-2'>Notes</p>

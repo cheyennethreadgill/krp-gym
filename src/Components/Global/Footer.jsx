@@ -72,13 +72,15 @@ const Footer = () => {
                 {/* <a href="phone:+ (1) 718 - 000 - 0211"></a> */}
               </Col>
               <Col lg='4'>
-                <Form>
+                <Form name='Subscribe'>
                   <Form.Group>
-                    <Form.Label>
+                    <Form.Label for='email'>
                       <h2 className='fs-4 fw-bold text-uppercase'>Start Now</h2>
                     </Form.Label>
                     <div className='input-container'>
                       <Form.Control
+                        name='email'
+                        name='Subscribe'
                         type='email'
                         placeholder='Email'
                         className='form-control-light'

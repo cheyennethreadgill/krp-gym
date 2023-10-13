@@ -80,10 +80,10 @@ const Footer = () => {
                     <div className='input-container'>
                       <Form.Control
                         name='email'
-                        name='Subscribe'
                         type='email'
                         placeholder='Email'
                         className='form-control-light'
+                        autoComplete='true'
                       ></Form.Control>
                       <div className='button-container'>
                         <Button

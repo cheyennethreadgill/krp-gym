@@ -6,7 +6,9 @@ const MapGL = () => {
   const [token, setToken] = useState(
     'pk.eyJ1IjoiY2V0aHJlYWQiLCJhIjoiY2xuZXFpemlzMGVtYzJrcGtzdG5pM2QzZSJ9.W6Wqg5NzMAp_zr-XM4hw-Q'
   );
-  const [mapStyle, setMapstyle] = useState();
+  const [mapStyle, setMapstyle] = useState(
+    'mapbox://styles/cethread/clnet40br07rt01p76iakdav0'
+  );
   const [viewport, setViewport] = useState({
     initialViewState: {
       longitude: -73.935242,
@@ -15,7 +17,7 @@ const MapGL = () => {
     },
     width: '100vw',
     height: '600px',
-    mapStyle: setMapstyle('mapbox://styles/cethread/clnet40br07rt01p76iakdav0'),
+    mapStyle: mapStyle,
   });
 
   return (

@@ -1,6 +1,5 @@
-import { Container } from "react-bootstrap";
-import HeaderAccent from "./headerAccent";
-import Image from "react-bootstrap/Image";
+import HeaderAccent from './headerAccent';
+import Image from 'react-bootstrap/Image';
 
 const PageHeadersInfo = ({ name, img }) => {
   return (

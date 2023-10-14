@@ -1,11 +1,8 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import Footer from "../Global/Footer";
-import { Row, Col, Image, Container, Button } from "react-bootstrap";
-import { InputGroup, Input, Form } from "react-bootstrap";
-import products from '../../data/products';
-import MainNav from "../Global/MainNav";
-import PageHeaders from "../Global/PageHeaders";
+import { Link } from 'react-router-dom';
+import Footer from '../Global/Footer';
+import { Row, Col, Image, Container, Button } from 'react-bootstrap';
+import MainNav from '../Global/MainNav';
+import PageHeaders from '../Global/PageHeaders';
 
 const Cart = ({
   removeItem,
@@ -13,10 +10,7 @@ const Cart = ({
   increaseQty,
   grandTotal,
   cartLength,
-  darkMode,
   cart,
-  items,
-  setCart,
 }) => {
   const [increase, setIncrease] = useState('');
 
@@ -66,7 +60,7 @@ const Cart = ({
                 <div key={item.id}>
                   <hr></hr>
 
-                  {/* NAME DELETE------------------------------------------------------------------ */}
+                  {/* ------------------------------------------------------------------NAME DELETE */}
                   <Row className='mb-4 align-items-center'>
                     <Col
                       lg='4'
@@ -80,7 +74,6 @@ const Cart = ({
                         className=' text-light fw-normal remove border-0 pe-3'
                         onClick={() => {
                           removeItem(item.id);
-                          // console.log(item);
                         }}
                       >
                         x
@@ -94,7 +87,7 @@ const Cart = ({
                       ></Image>
                       <h5 className='fw-light'>{item.name}</h5>
                     </Col>
-                    {/* PRICE -------------------------------------------------------------------- */}
+                    {/*  --------------------------------------------------------------------PRICE */}
                     <Col
                       className=''
                       lg='2'
@@ -104,7 +97,7 @@ const Cart = ({
                     >
                       ${item.price}
                     </Col>
-                    {/* INPUT -------------------------------------------------------------------- */}
+                    {/*  --------------------------------------------------------------------INPUT */}
 
                     <Col
                       lg='4'
@@ -132,7 +125,7 @@ const Cart = ({
                         +
                       </Button>
                     </Col>
-                    {/* TOTAL-------------------------------------------------------------------- */}
+                    {/* --------------------------------------------------------------------TOTAL */}
                     <Col
                       lg='2'
                       md='1'

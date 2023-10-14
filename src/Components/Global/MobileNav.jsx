@@ -1,14 +1,9 @@
-import { Route, Routes } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Button } from 'react-bootstrap';
-import Logo from '../../images/Global/logo.png.webp';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import Cart from '../Cart/Cart';
 
 const MobileNav = ({ darkMode, cart, cartLength }) => {
   return (

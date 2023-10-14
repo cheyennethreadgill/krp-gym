@@ -104,9 +104,6 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
                 className='d-flex justify-content-between fw-semibold'
               >
                 Cart ({cartLength})
-                {/* <span className='pb-1 main-nav_link text-light '>
-                  
-                </span> */}
                 <span>
                   <i className='d-lg-none fa-solid fa-angle-right'></i>
                 </span>

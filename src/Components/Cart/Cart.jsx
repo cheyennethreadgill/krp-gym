@@ -18,51 +18,50 @@ const Cart = ({
   items,
   setCart,
 }) => {
-  // console.log(cartLength);
-  const [increase, setIncrease] = useState("");
+  const [increase, setIncrease] = useState('');
 
   return (
-    <section className="cart text-light">
+    <section className='cart text-light'>
       <MainNav
-        darkMode="true"
+        darkMode='true'
         cartLength={cartLength}
       />
-      <PageHeaders name="Cart" />
-      <div className=""></div>
+      <PageHeaders name='Cart' />
+      <div className=''></div>
 
-      <div className="bg-dark py-5">
-        <Container className="py-5">
-          <Row className={cart.length === 0 ? "d-none" : "d-flex"}>
+      <div className='bg-dark py-5'>
+        <Container className='py-5'>
+          <Row className={cart.length === 0 ? 'd-none' : 'd-flex'}>
             <Col
-              lg="4"
-              md="9"
-              sm="8"
-              xs="8"
-              className=""
+              lg='4'
+              md='9'
+              sm='8'
+              xs='8'
+              className=''
             >
-              <h5 className="fw-light">Product</h5>
+              <h5 className='fw-light'>Product</h5>
             </Col>
             <Col
-              lg="3"
-              md="3"
-              sm="4"
-              xs="1"
+              lg='3'
+              md='3'
+              sm='4'
+              xs='1'
             >
-              <h5 className="fw-light">Price</h5>
+              <h5 className='fw-light'>Price</h5>
             </Col>
-            <Col className="d-none d-lg-block">
-              <h5 className="fw-light">Quantity</h5>
+            <Col className='d-none d-lg-block'>
+              <h5 className='fw-light'>Quantity</h5>
             </Col>
             <Col
-              lg="2"
-              className="d-none d-lg-block"
+              lg='2'
+              className='d-none d-lg-block'
             >
-              <h5 className="fw-light">Total</h5>
+              <h5 className='fw-light'>Total</h5>
             </Col>
           </Row>
 
           {cart.length > 0 ? (
-            cart.map((item, key) => {
+            cart.map((item) => {
               return (
                 <div key={item.id}>
                   <hr></hr>
@@ -146,12 +145,12 @@ const Cart = ({
               );
             })
           ) : (
-            <div className="d-flex flex-column  gap-3 justify-content-center align-items-center py-5 mt-5">
-              <h5 className="">Add items to your cart</h5>
+            <div className='d-flex flex-column  gap-3 justify-content-center align-items-center py-5 mt-5'>
+              <h5 className=''>Add items to your cart</h5>
               <Button
-                variant=""
-                href="/"
-                className="btn-light pe-4"
+                variant=''
+                href='/'
+                className='btn-light pe-4'
               >
                 Shop
               </Button>
@@ -160,20 +159,20 @@ const Cart = ({
 
           {cartLength > 0 ? (
             <section>
-              <h2 className="my-5 pt-5 fw-bold fs-2">Cart Totals</h2>
+              <h2 className='my-5 pt-5 fw-bold fs-2'>Cart Totals</h2>
               <Row>
                 <Col>
                   <h3>Total</h3>
                 </Col>
-                <Col lg="10">
-                  <h5 className="fw-light">${grandTotal.toFixed(2)}</h5>
+                <Col lg='10'>
+                  <h5 className='fw-light'>${grandTotal.toFixed(2)}</h5>
                 </Col>
                 <hr />
-                <Col sm="12">
+                <Col sm='12'>
                   <Link
-                    variant=""
-                    to="/Checkout"
-                    className="btn-light pe-3"
+                    variant=''
+                    to='/Checkout'
+                    className='btn-light pe-3'
                   >
                     Proceed To Checkout
                   </Link>

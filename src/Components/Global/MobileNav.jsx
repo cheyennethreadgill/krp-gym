@@ -4,8 +4,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
+import Logo from '../../images/Global/logo.png.webp';
 
-const MobileNav = ({ darkMode, cart, cartLength }) => {
+const MobileNav = ({ darkMode, cartLength }) => {
   return (
     <section
       className={darkMode ? 'position-relative bg-dark ' : 'position-relative'}

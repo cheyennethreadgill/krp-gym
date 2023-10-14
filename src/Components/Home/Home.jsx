@@ -5,23 +5,11 @@ import Routines from "./Routines";
 import HomeShop from "./HomeShop";
 import HomeTrainer from "./HomeTrainer";
 import Footer from "../Global/Footer";
-import products from '../../data/products';
 import { useState } from "react";
-import Cart from "../Cart/Cart";
 
-const Home = ({ cart, cartLength, darkMode, items, handleCartIncrease }) => {
+const Home = ({ cart, cartLength, items, handleCartIncrease }) => {
   const [price, setPrice] = useState(0);
   const [increase, setIncrease] = useState(price);
-
-  // console.log(cart)
-
-  // function handleClick(val) {
-  //   setPrice(price + val);
-  //   // console.log(price + val);
-  //   setIncrease(increase + val);
-  //   console.log(increase);
-  // }
-
   return (
     <section>
       <Header
@@ -33,7 +21,6 @@ const Home = ({ cart, cartLength, darkMode, items, handleCartIncrease }) => {
       <HomeTrainer />
       <HomeShop
         items={items}
-        // handleClick={handleClick}
         handleCartIncrease={handleCartIncrease}
         cartTotal={increase}
         cart={cart}

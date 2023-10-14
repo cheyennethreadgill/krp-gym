@@ -1,4 +1,3 @@
-import image from '../../images/Team/team-alexander.jpg.webp';
 const teamList = [
   {
     id: 0,

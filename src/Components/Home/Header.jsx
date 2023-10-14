@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Image from 'react-bootstrap/Image';
 import headerImgs from '../../data/headerImgs';
-import sliderlogo from '../../images/Home/header/slider-logo.png';
+import sliderlogo from '../../images/Home/header/slider-logo.png.webp';
 import MainNav from '../Global/MainNav';
 
 const Header = ({ darkMode, cartLength, cart }) => {

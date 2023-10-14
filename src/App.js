@@ -2,13 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import { useState } from "react";
-import "../src/styles/Index/index.css";
-import Home from "./Components/Home/Home";
-import PricingPlan from "./Components/PricingPlan/PricingPlan";
-import Contact from "./Components/Contact/Contact";
-import Team from "./Components/Team/Team";
-import Cart from "./Components/Cart/Cart";
-import MainNav from "./Components/Global/MainNav";
+import '../src/index.css';
 import Rout from "./Components/Global/Rout";
 import products from '../src/data/products';
 

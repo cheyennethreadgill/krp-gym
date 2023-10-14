@@ -2,7 +2,7 @@ import { useState } from "react";
 import MapGL from '../Utils/Map';
 import PageHeadersInfo from '../Global/PageHeadersInfo';
 import MainNav from '../Global/MainNav';
-import header from '../../images/Team/Team-header.jpg';
+import header from '../../images/Team/Team-header.jpg.webp';
 import members from '../Team/teamList';
 import {
   Row,
@@ -39,7 +39,7 @@ const Contact = ({ darkMode, cartLength }) => {
       />
       <PageHeadersInfo
         name='Contact Us'
-        img={require('../../images/Contact/contact-header.jpg')}
+        img={require('../../images/Contact/contact-header.jpg.webp')}
       />
       <section style={{ height: '600px' }}>
         <MapGL />

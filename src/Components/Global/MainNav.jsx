@@ -4,11 +4,11 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Button } from "react-bootstrap";
-import Logo from "../../images/Global/logo.png";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
-import Cart from "../Cart/Cart";
+import Logo from '../../images/Global/logo.png.webp';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
+import Cart from '../Cart/Cart';
 import MobileNav from './MobileNav';
 
 const MainNav = ({ darkMode, cart, cartLength }) => {
@@ -32,7 +32,8 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
             <Image
               alt='Company Logo'
               src={Logo}
-              width={150}
+              width='150px'
+              height='100%'
               className={
                 darkMode ? 'main-nav_logo_light ' : 'main-nav_logo_dark '
               }
@@ -43,7 +44,8 @@ const MainNav = ({ darkMode, cart, cartLength }) => {
             <Image
               alt='Company Logo'
               src={Logo}
-              width={120}
+              width='120px'
+              height='100%'
               className='main-nav_mobile_logo '
             />
           </Navbar.Brand>

@@ -12,7 +12,7 @@ const PricingPlan = ({ darkMode, cartLength }) => {
       />
       <PageHeadersInfo
         name='Pricing Plans'
-        img={require('../../images/PricingPlan/pricing-plan-header.jpg')}
+        img={require('../../images/PricingPlan/pricing-plan-header.jpg.webp')}
       />
       <section className='bg-secondary'>
         <Container className='py-5'>

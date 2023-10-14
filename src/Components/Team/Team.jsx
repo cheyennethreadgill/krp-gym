@@ -1,6 +1,6 @@
 import PageHeadersInfo from "../Global/PageHeadersInfo";
 import MainNav from "../Global/MainNav";
-import header from "../../images/Team/Team-header.jpg";
+import header from "../../images/Team/Team-header.jpg.webp";
 import members from "../Team/teamList";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
@@ -19,7 +19,7 @@ const Team = ({ darkMode, cartLength }) => {
       />
       <PageHeadersInfo
         name='Our Team'
-        img={require('../../images/Team/Team-header.jpg')}
+        img={require('../../images/Team/Team-header.jpg.webp')}
       />
       <section className='team_members text-light text-center bg-dark'>
         <Container className=' py-5 '>

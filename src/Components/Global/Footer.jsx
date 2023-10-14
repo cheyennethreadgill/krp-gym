@@ -2,7 +2,7 @@ import { Row, Col, Container, Button } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import logo from "../../images/Global/logo.png";
+import logo from '../../images/Global/logo.png.webp';
 import Socials from "./socials";
 import { Link } from "react-router-dom";
 

@@ -1,7 +1,7 @@
 import { Row, Col, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Image from "react-bootstrap/Image";
-import trainer from "../../images/Home/trainer/home-trainer.png";
+import trainer from "../../images/Home/trainer/home-trainer.png.webp";
 
 const HomeTrainer = () => {
   return (

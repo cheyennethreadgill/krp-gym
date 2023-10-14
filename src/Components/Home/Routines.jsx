@@ -1,11 +1,11 @@
 import { Container } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
-import image1 from "../../images/Home/routine/home-routine-1.png";
-import image2 from "../../images/Home/routine/home-routine-2.png";
-import image3 from "../../images/Home/routine/home-routine-3.png";
-import image4 from "../../images/Home/routine/home-routine-4.png";
-import image5 from "../../images/Home/routine/home-routine-5png.png";
+import image1 from '../../images/Home/routine/home-routine-1.png.webp';
+import image2 from '../../images/Home/routine/home-routine-2.png.webp';
+import image3 from '../../images/Home/routine/home-routine-3.png.webp';
+import image4 from '../../images/Home/routine/home-routine-4.png.webp';
+import image5 from '../../images/Home/routine/home-routine-5png.png.webp';
 
 const Routines = () => {
   return (

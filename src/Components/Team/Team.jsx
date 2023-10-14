@@ -28,9 +28,9 @@ const Team = ({ darkMode, cartLength }) => {
             Meet Our strongest team
           </h2>
           <h5 className='fw-light'>Find your perfect mentor! Join us!</h5>
-          {/* ROW--------------------------------------------------------- */}
+          {/* ----------------------------------------------------- *------------------------ROW----*/}
           <Row className=' py-5 team_members_container justify-content-md-center'>
-            {/* Memebers map backup---------------------------------------------- */}
+            {/* -----------------------------------------------------------------------------Memebers map backup */}
             {members.map((person) => {
               return (
                 <Col
@@ -40,7 +40,6 @@ const Team = ({ darkMode, cartLength }) => {
                   className='team_members_info '
                 >
                   <div className='team_members_info_bio'>
-                    {/* <Members /> */}
                     <h2 className='fw-bold m-0'>{person.fname}</h2>
                     <h2 className='fw-bold m-0'>{person.lname}</h2>
                     <p className='text-light team_members_info_bio_position'>

@@ -1,19 +1,16 @@
 import Carousel from "react-bootstrap/Carousel";
 import { Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import Image from 'react-bootstrap/Image';
 import headerImgs from '../../data/headerImgs';
 import sliderlogo from '../../images/Home/header/slider-logo.png.webp';
 import MainNav from '../Global/MainNav';
 
-const Header = ({ darkMode, cartLength, cart }) => {
+const Header = ({ cartLength, cart }) => {
   return (
     <section className='home_header bg-dark '>
       <MainNav
-        // cartTotal={increase}
         cartLength={cartLength}
         cart={cart}
-        // darkMode
       />
       <Carousel
         data-bs-theme='dark'

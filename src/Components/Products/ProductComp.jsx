@@ -2,8 +2,8 @@ import { Row, Col, Button } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 
-const ProductComp = ({ cart, item, handleClick, handleCartIncrease }) => {
-  const { id, name, price, img, category } = item;
+const ProductComp = ({ item, handleCartIncrease }) => {
+  const { name, price, img, category } = item;
   return (
     <Col
       className='pb-5 d-flex align-items-stretch'
@@ -30,11 +30,7 @@ const ProductComp = ({ cart, item, handleClick, handleCartIncrease }) => {
                 title='Add To Cart'
                 id={`Add ${name} to Cart`}
                 onClick={() => {
-                  // handleClick(item.price);
-                  // console.log(item);
                   handleCartIncrease(item.id);
-                  // console.log(item.id);
-                  // console.log(`${item.id} has been Added to cart`);
                 }}
               >
                 Add To Cart

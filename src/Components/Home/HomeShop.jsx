@@ -1,27 +1,11 @@
 import { Container } from "react-bootstrap";
-import { Row, Col } from "react-bootstrap";
-import Button from "react-bootstrap";
-import { useEffect, useState } from 'react';
-import products from '../../data/products';
-
+import { Row } from 'react-bootstrap';
 import ProductComp from '../Products/ProductComp';
 
-const HomeShop = ({
-  cart,
-  items,
-  handleClick,
-  cartTotal,
-  handleCartIncrease,
-}) => {
+const HomeShop = ({ cart, items, handleCartIncrease }) => {
   return (
     <section className='home_shop position-relative pb-5 '>
       <Container className='pt-5 pb-3'>
-        {/* {cart.length > 0 ? (
-          <div className="">
-            <h1>View Your Cart</h1>
-            <a className="btn btn-dark">View Cart</a>
-          </div>
-        ) : null} */}
         <span>
           <svg
             className='qodef-svg--title-decoration qodef-title-decoration'
@@ -56,26 +40,10 @@ const HomeShop = ({
                 item={item}
                 key={item.id}
                 cart={cart}
-                // handleClick={handleClick}
-                // cartTotal={cartTotal}
                 handleCartIncrease={handleCartIncrease}
               />
             );
           })}
-          {/* {data
-            ? data.map((dat) => {
-                return (
-                  <ProductComp
-                    dat={dat}
-                    key={dat.id}
-                    cart={cart}
-                    // handleClick={handleClick}
-                    // cartTotal={cartTotal}
-                    handleCartIncrease={handleCartIncrease}
-                  />
-                );
-              })
-            : null} */}
         </Row>
       </Container>
     </section>

@@ -1,124 +1,118 @@
 .team {
-    &_members {
-        &_container {
-            @include breakpoints-up (lg) {
-                height: 35rem;
-            }
-            @include breakpoints-down (lg) {
-                gap: 3rem;
-            }
+  &_members {
+    &_container {
+      @include breakpoints-up(lg) {
+        height: 35rem;
+      }
+      @include breakpoints-down(lg) {
+        gap: 3rem;
+      }
+    }
+    &_info {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      @include breakpoints-up(md) {
+        flex-direction: column;
+      }
+      text-align: left;
+
+      svg {
+        width: 6rem;
+        top: -14%;
+        right: 10%;
+        z-index: 5;
+
+        @include breakpoints-down(lg) {
+          top: -44%;
+          right: -4%;
         }
-        &_info {
-            
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            @include breakpoints-up (md) {
-                flex-direction: column;
-            }
-            text-align: left;
+      }
+      svg {
+        opacity: 0;
+        width: 6rem;
+        transition: all ease 300ms;
+      }
+      &_socials {
+        a {
+          transition: all ease 300ms;
+        }
+        &_icons {
+          opacity: 0;
+          transition: all ease 300ms;
 
-           
-            svg {
-                
-                width: 6rem;
-                top: -14%;
-                right: 10%;
-                z-index: 5;
+          @include breakpoints-down(md) {
+            position: absolute;
+            top: 53%;
+            left: 22%;
+          }
+          @include breakpoints-down(sm) {
+            position: absolute;
+            top: 53%;
+            left: 8%;
+          }
+        }
+      }
 
-                @include breakpoints-down (lg) {
-                    top: -44%;
-                    right: -4%;
-                }
-           }
-            svg {
-                opacity: 0;
-                width: 6rem;
-                transition: all ease 300ms;
-            }
-            &_socials {
-                a {
-                    transition: all ease 300ms;
-                }
-                &_icons {
-                    opacity: 0;
-                    transition: all ease 300ms;
+      &_bio {
+        position: relative;
+        z-index: 1;
 
-                    @include breakpoints-down (md) {
-                        position: absolute;
-                        top: 53%;
-                        left: 22%;
-                    }
-                    @include breakpoints-down (sm) {
-                        position: absolute;
-                        top: 53%;
-                        left: 8%;
-                    }
-                }
-            }
+        &_position {
+          font-size: 0.875rem;
+        }
+      }
+      &_img {
+        @include breakpoints-up(md) {
+          position: absolute;
+        }
+        z-index: 0;
+        align-self: center;
+      }
 
-            &_bio {
-                position: relative;
-                z-index: 1;
-
-                &_position {
-                    font-size: .875rem;
-                }
-            }
-            &_img {
-                @include breakpoints-up (md) {
-                    position: absolute;
-                }
-                z-index: 0;
-                align-self: center;
-            }
-
+      &:hover {
+        .team_members_info_socials_icons {
+          opacity: 1;
+          transition: all ease 300ms;
+          a {
             &:hover {
-                
-                .team_members_info_socials_icons {
-                    opacity: 1;
-                    transition: all ease 300ms;
-                    a {
-                        &:hover {
-                            opacity: 0.5;
-                            transition: all ease 300ms;
-                        }
-                    }
-                }
-                svg {
-                    opacity: 1;
-                    transition: all ease 300ms;
-                }
-               
-    
-                &_bio {
-                    position: relative;
-                    z-index: 1;
-    
-                    &_position {
-                        font-size: .875rem;
-                    }
-                }
-                &_img {
-                    position: absolute;
-                    z-index: 0;
-                    align-self: center;
-                }
+              opacity: 0.5;
+              transition: all ease 300ms;
             }
-            
+          }
         }
-    }
+        svg {
+          opacity: 1;
+          transition: all ease 300ms;
+        }
 
-    &_subscribe {
-        background-image: url('/src/images/Team/team-subscribe.jpg.webp');
-        background-repeat: no-repeat;
-        background-size: cover;
-        .form-control {
-            &::placeholder {
-                color: white;
-                font-weight: 400;
-            }
+        &_bio {
+          position: relative;
+          z-index: 1;
+
+          &_position {
+            font-size: 0.875rem;
+          }
         }
+        &_img {
+          position: absolute;
+          z-index: 0;
+          align-self: center;
+        }
+      }
     }
+  }
+
+  &_subscribe {
+    background-image: url("/src/images/Team/team-subscribe.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .form-control {
+      &::placeholder {
+        color: white;
+        font-weight: 400;
+      }
+    }
+  }
 }

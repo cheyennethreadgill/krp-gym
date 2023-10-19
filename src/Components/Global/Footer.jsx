@@ -1,104 +1,93 @@
+import React from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import Form from "react-bootstrap/Form";
-import logo from '../../images/Global/logo.png.webp';
-import Socials from "./socials";
 import { Link } from "react-router-dom";
+import logo from "../../images/Global/logo.png.webp";
+import Socials from "./socials";
 
 const Footer = () => {
   return (
-    <footer className='footer bg-primary text-light'>
-      <Container className='py-5'>
-        <Row className='py-5 gap-3'>
-          <Col
-            lg='3'
-            className='me-5'
-          >
+    <footer className="footer bg-primary text-light">
+      <Container className="py-5">
+        <Row className="py-5 gap-3">
+          <Col lg="3" className="me-5">
             <Image
-              alt='Company Logo'
+              alt="Company Logo"
               fluid
               src={logo}
-              className='mb-3 mb-lg-5  pb-lg-4'
-              width='100%'
-              height='100%'
-            ></Image>
+              className="mb-3 mb-lg-5  pb-lg-4"
+              width="100%"
+              height="100%"
+            />
           </Col>
 
-          <Col
-            lg='8'
-            md='12'
-            sm='12'
-          >
-            <h5 className='fw-light '>
+          <Col lg="8" md="12" sm="12">
+            <h5 className="fw-light ">
               Please feel free to send us an e-mail at kropp@qodeinteractive.com
               for any additional inquiries
             </h5>
           </Col>
-          <Col
-            lg='3'
-            className='me-lg-5'
-          >
-            <h3 className='fs-4 fw-bold'>About</h3>
-            <p className='text-light'>
+          <Col lg="3" className="me-lg-5">
+            <h3 className="fs-4 fw-bold">About</h3>
+            <p className="text-light">
               Shape up your site with Kropp, a theme especially made for fitness
               & gym websites.
             </p>
           </Col>
-          <Col
-            lg='8'
-            sm={{ order: 1 }}
-          >
+          <Col lg="8" sm={{ order: 1 }}>
             <Row>
-              <Col lg='4'>
-                <h3 className='fs-4 fw-bold'>Working Hours</h3>
-                <ul className='p-0'>
-                  <li className='text-light list-unstyled'>
-                    Monday-Friday <br></br> 05:30 - 12:30
+              <Col lg="4">
+                <h3 className="fs-4 fw-bold">Working Hours</h3>
+                <ul className="p-0">
+                  <li className="text-light list-unstyled">
+                    Monday-Friday <br /> 05:30 - 12:30
                   </li>
 
-                  <li className='text-light  list-unstyled'>
-                    <br></br> Weekdays <br></br> 05:30 - 12:30
+                  <li className="text-light  list-unstyled">
+                    <br /> Weekdays <br /> 05:30 - 12:30
                   </li>
                 </ul>
               </Col>
-              <Col lg='4'>
-                <h3 className='fs-4 fw-bold'>Location</h3>
-                <p className='text-light'>
-                  68 Main St, Brooklyn <br></br>NY 11201, United States
+              <Col lg="4">
+                <h3 className="fs-4 fw-bold">Location</h3>
+                <p className="text-light">
+                  68 Main St, Brooklyn <br />
+                  NY 11201, United States
                 </p>
-                <br></br>
+                <br />
                 {/* <a href="mailto:kropp@qodeinteractive.com">
                   mailto:kropp@qodeinteractive.com
                 </a> */}
                 {/* <a href="phone:+ (1) 718 - 000 - 0211"></a> */}
               </Col>
-              <Col lg='4'>
-                <Form name='Subscribe'>
+              <Col lg="4">
+                <Form name="Subscribe">
                   <Form.Group>
-                    <Form.Label htmlFor='email'>
-                      <h2 className='fs-4 fw-bold text-uppercase'>Start Now</h2>
+                    <Form.Label htmlFor="email">
+                      <h2 className="fs-4 fw-bold text-uppercase">Start Now</h2>
                     </Form.Label>
-                    <div className='input-container'>
+                    <div className="input-container">
                       <Form.Control
-                        id='email'
-                        type='email'
-                        placeholder='Email'
-                        className='form-control-light'
-                        autoComplete='true'
-                      ></Form.Control>
-                      <div className='button-container'>
+                        id="email"
+                        type="email"
+                        placeholder="Email"
+                        className="form-control-light"
+                        autoComplete="true"
+                      />
+                      <div className="button-container">
                         <Button
-                          aria-label='Subscribe'
-                          variant='outline-light'
-                          type='submit'
-                          className=''
+                          aria-label="Subscribe"
+                          variant="outline-light"
+                          type="submit"
+                          className=""
                         >
-                          <span></span>
+                          <span />
                         </Button>
                       </div>
                     </div>
                     <Form.Text>
-                      <p className='fw-semibold fs-6'>
+                      <p className="fw-semibold fs-6">
                         Subscribe to our newsletter
                       </p>
                     </Form.Text>
@@ -110,20 +99,14 @@ const Footer = () => {
           </Col>
         </Row>
       </Container>
-      <div className='copyright  bg-dark py-3 d-flex align-items-center'>
-        <Container className=''>
-          <p className='p-0 m-0 text-light'>
+      <div className="copyright  bg-dark py-3 d-flex align-items-center">
+        <Container className="">
+          <p className="p-0 m-0 text-light">
             Copyright 2023 |
-            <Link
-              to='/Contact'
-              className='text-light'
-            >
+            <Link to="/Contact" className="text-light">
               Contact |
             </Link>
-            <Link
-              to='/'
-              className='text-light'
-            >
+            <Link to="/" className="text-light">
               Privacy Policy
             </Link>
           </p>

@@ -1,59 +1,65 @@
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import HeaderAccent from "../Global/headerAccent";
-import { Container } from "react-bootstrap";
-import { Row, Col, Button } from "react-bootstrap";
 
 const Newsletter = () => {
-  return (
-    <section className='home_newsletter pt-5 '>
-      <Container className='pt-lg-5 '>
-        <Row className='gap-3 gap-lg-5 '>
-          <Col
-            lg='4'
-            sm=''
-            className='me-lg-5'
-          >
-            <Form>
-              <Form.Group>
-                <Form.Label htmlFor='email'>
-                  <HeaderAccent />
-                  <h2 className=' fs-1 fw-bold text-uppercase'>Newsletter</h2>
-                </Form.Label>
-                <div className='input-container'>
-                  <Form.Control
-                    name='email'
-                    type='email'
-                    placeholder='Email'
-                    className=''
-                    autoComplete='true'
-                  ></Form.Control>
+  const [validated, setValidated] = useState(false);
 
-                  <div className='button-container'>
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
+  };
+
+  return (
+    <section className="home_newsletter pt-5 ">
+      <Container className="pt-lg-5 ">
+        <Row className="gap-3 gap-lg-5 ">
+          <Col lg="4" className="me-lg-5">
+            <Form noValidate validated={validated} onSubmit={handleSubmit}>
+              <Form.Group as={Col}>
+                <Form.Label htmlFor="email">
+                  <HeaderAccent />
+                  <h2 className=" fs-1 fw-bold text-uppercase">Newsletter</h2>
+                </Form.Label>
+                <div className="input-container">
+                  <Form.Control
+                    required
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    autoComplete="true"
+                  />
+
+                  <div className="button-container">
                     <Button
-                      name='Subscribe'
-                      variant='outline-dark'
-                      aria-label='Subsribe to Newsletter'
-                      type='submit'
-                      className=''
+                      name="Subscribe"
+                      variant="outline-dark"
+                      aria-label="Subsribe to Newsletter"
+                      type="submit"
                     >
-                      <span></span>
+                      <span />
                     </Button>
                   </div>
                 </div>
                 <Form.Text>
-                  <p className='fw-semibold fs-6'>
+                  <p className="fw-semibold fs-6">
                     Subscribe to our newsletter
                   </p>
                 </Form.Text>
+                <Form.Control.Feedback type="invalid">
+                  Please provide a valid email address.
+                </Form.Control.Feedback>
               </Form.Group>
             </Form>
           </Col>
-          <Col
-            lg='6'
-            sm=''
-            className='ms-lg-5'
-          >
-            <h3 className='pb-3 fs-2 fw-bold'>
+          <Col lg="6" className="ms-lg-5">
+            <h3 className="pb-3 fs-2 fw-bold">
               GET IN SHAPE WITH OUR PRO TRAINERS. REACH YOUR BODY GOALS IN NO
               TIME, CONTACT US
             </h3>
@@ -66,7 +72,7 @@ const Newsletter = () => {
         </Row>
         <Row>
           <Col>
-            <h1 className='h1-primary fw-bold pt-lg-5 '>Routines</h1>
+            <h1 className="h1-primary fw-bold pt-lg-5 ">Routines</h1>
           </Col>
         </Row>
       </Container>

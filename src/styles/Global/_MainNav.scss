@@ -1,51 +1,51 @@
 .cart-pop-out {
-    transform: translate(787px, 40px);
-    transition: all ease 300ms;
+  transform: translate(787px, 40px);
+  transition: all ease 300ms;
 }
 .navbar-collapse {
-      .navbar-nav {
-        a {
-          @include breakpoints-down (lg) {
-            color: $light;
-          }
-        }
+  .navbar-nav {
+    a {
+      @include breakpoints-down(lg) {
+        color: $light;
+      }
     }
   }
+}
+
 .main-nav {
-    @include breakpoints-down (lg) {
-        background-color: $dark;
+  @include breakpoints-down(lg) {
+    background-color: $dark;
 
-        a {
-            color: $light;
-        }
-       
+    a {
+      color: $light;
     }
-    &_logo_dark {
-        filter: invert(1);
-    }
-    &_logo_light {
-        filter: none;
-    }
-    &_container {
-        max-width: 95%;
-    }
-    &_link {
-        font-size: .95rem;
-        @include breakpoints-down (lg) {
-        }
+  }
+  &_logo_dark {
+    filter: invert(1);
+  }
+  &_logo_light {
+    filter: none;
+  }
+  &_container {
+    max-width: 95%;
+  }
 
-        &:hover {
-            color: $light;
-        }
-    }
-    &_mobile {
-        &_logo {
-            filter: invert(0);
-        }
+  &_link {
+    font-size: 0.95rem;
+
+    @include breakpoints-down(lg) {
     }
 
-    .btn {
-        color: black;
+    &:hover {
+      color: $light;
     }
-    
+  }
+  &_mobile {
+    &_logo {
+      filter: invert(0);
+    }
+  }
+  .btn {
+    color: black;
+  }
 }

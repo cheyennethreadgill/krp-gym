@@ -1,9 +1,8 @@
 .contact {
-    .form-control {
-        
+  .form-control {
     color: $light;
-        &::placeholder {
-            color: $light;
-        }
+    &::placeholder {
+      color: $light;
     }
+  }
 }

@@ -1,5 +1,11 @@
+import React from "react";
+import PropTypes from "prop-types";
 import { Container } from "react-bootstrap";
+
 const PageHeaders = ({ name }) => {
+  PageHeaders.propTypes = {
+    name: PropTypes.string.isRequired,
+  };
   return (
     <section className="bg-secondary py-5 text-light">
       <Container>

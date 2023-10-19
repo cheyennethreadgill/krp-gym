@@ -1,44 +1,32 @@
-// .carousel-item {
-//     @include breakpoints-down (sm) {
-//     
-//     }
-// }
 .home {
-    &_header {
-        .carousel {
+  &_header {
+    .carousel {
+      &-item {
+        width: 100%;
+        height: 100vh;
 
-
-            &-item {
-                width: 100%;
-                height: 100vh;
-                
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    
-                // transform: translateX(50px);
-                }
-            }
-
-            
-            &-caption {
-                @include breakpoints-down (md) {
-                    bottom: 50vh;
-                }
-            }
-
-          
-            
-        &_logo {
-            @include breakpoints-down (sm) {
-                
-                width: 20rem !important;
-            }
-            }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
+      }
+
+      &-caption {
+        @include breakpoints-down(md) {
+          bottom: 50vh;
+        }
+      }
+
+      &_logo {
+        @include breakpoints-down(sm) {
+          width: 20rem !important;
+        }
+      }
     }
+  }
 }
-.carousel-control-prev, .carousel-control-next {
-    display: none;
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
 }

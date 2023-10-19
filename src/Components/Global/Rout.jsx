@@ -1,10 +1,17 @@
+import React, { lazy } from "react";
+import PropTypes from "prop-types";
 import { Routes, Route } from "react-router-dom";
 import Home from "../Home/Home";
-import Cart from "../Cart/Cart";
-import Checkout from "../Checkout/Checkout";
 import Team from "../Team/Team";
 import PricingPlan from "../PricingPlan/PricingPlan";
 import Contact from "../Contact/Contact";
+
+const Cart = lazy(() => {
+  return import("../Cart/Cart");
+});
+const Checkout = lazy(() => {
+  return import("../Checkout/Checkout");
+});
 
 const Rout = ({
   darkMode,
@@ -18,34 +25,31 @@ const Rout = ({
   increaseQty,
   grandTotal,
 }) => {
+  Rout.propTypes = {
+    darkMode: PropTypes.bool.isRequired,
+    cartLength: PropTypes.number.isRequired,
+    handleCartIncrease: PropTypes.func.isRequired,
+    cart: PropTypes.arrayOf.isRequired,
+    setCart: PropTypes.arrayOf.isRequired,
+    removeItem: PropTypes.func.isRequired,
+    decreaseQty: PropTypes.func.isRequired,
+    increaseQty: PropTypes.func.isRequired,
+    grandTotal: PropTypes.func.isRequired,
+    items: PropTypes.arrayOf.isRequired,
+  };
   return (
     <Routes>
       <Route
         path="/PricingPlan"
-        element={
-          <PricingPlan
-            darkMode={darkMode}
-            cartLength={cartLength}
-          />
-        }
+        element={<PricingPlan darkMode={darkMode} cartLength={cartLength} />}
       />
       <Route
         path="/Contact"
-        element={
-          <Contact
-            darkMode={darkMode}
-            cartLength={cartLength}
-          />
-        }
+        element={<Contact darkMode={darkMode} cartLength={cartLength} />}
       />
       <Route
         path="/Team"
-        element={
-          <Team
-            darkMode={darkMode}
-            cartLength={cartLength}
-          />
-        }
+        element={<Team darkMode={darkMode} cartLength={cartLength} />}
       />
       <Route
         path="/"

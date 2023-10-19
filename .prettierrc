@@ -1,0 +1,8 @@
+{
+  "endOfLine": "crlf",
+  "printwidth": 50,
+  "tabWidth": 2,
+  "trailingcomma": "es5",
+  "bracketspacing": true,
+  "single": true
+}

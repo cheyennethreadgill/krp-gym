@@ -1,3 +1,5 @@
+import React from "react";
+
 const HeaderAccent = () => {
   return (
     <span className="position-absolute right-50 bottom-50">
@@ -15,13 +17,13 @@ const HeaderAccent = () => {
             height="2"
             transform="translate(268 1398)"
             fill="currentColor"
-          ></rect>
+          />
           <rect
             width="40"
             height="2"
             transform="translate(289 1379) rotate(90)"
             fill="currentColor"
-          ></rect>
+          />
         </g>
       </svg>
     </span>

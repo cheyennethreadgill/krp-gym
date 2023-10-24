@@ -1,14 +1,16 @@
-import React, { useState, lazy } from "react";
+// import {lazy} from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
+import MapGL from "../Utils/Map";
 import PageHeadersInfo from "../Global/PageHeadersInfo";
 import MainNav from "../Global/MainNav";
 import Footer from "../Global/Footer";
 
 // Delay render until called
-const MapGL = lazy(() => {
-  return import("../Utils/Map");
-});
+// const MapGL = lazy(() => {
+//   return import("../Utils/Map");
+// });
 
 const Contact = ({ cartLength }) => {
   Contact.propTypes = {

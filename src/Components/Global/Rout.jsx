@@ -1,17 +1,20 @@
-import React, { lazy } from "react";
+// import { lazy } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { Routes, Route } from "react-router-dom";
 import Home from "../Home/Home";
 import Team from "../Team/Team";
 import PricingPlan from "../PricingPlan/PricingPlan";
 import Contact from "../Contact/Contact";
+import Checkout from '../Checkout/Checkout'
+import Cart from '../Cart/Cart'
 
-const Cart = lazy(() => {
-  return import("../Cart/Cart");
-});
-const Checkout = lazy(() => {
-  return import("../Checkout/Checkout");
-});
+// const Cart = lazy(() => {
+//   return import("../Cart/Cart");
+// });
+// const Checkout = lazy(() => {
+//   return import("../Checkout/Checkout");
+// });
 
 const Rout = ({
   darkMode,

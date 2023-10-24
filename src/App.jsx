@@ -54,7 +54,10 @@ const App = () => {
       setCart(
         cart.map((item) => {
           return prod.id === item.id
-            ? { ...existingProduct, quantity: existingProduct.quantity - 1 }
+            ? {
+                ...existingProduct,
+                quantity: Math.max(1, existingProduct.quantity - 1),
+              }
             : item;
         }),
       );

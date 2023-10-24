@@ -26,7 +26,7 @@ const MainNav = ({ darkMode, cartLength }) => {
         }
       >
         <Container fluid className="main-nav_container">
-          <Navbar.Brand className="d-none d-lg-block">
+          <Navbar.Brand href="/" className="d-none d-lg-block">
             <Image
               alt="Company Logo"
               src={Logo}
@@ -38,7 +38,7 @@ const MainNav = ({ darkMode, cartLength }) => {
             />
           </Navbar.Brand>
 
-          <Navbar.Brand className="d-lg-none">
+          <Navbar.Brand href="/" className="d-lg-none">
             <Image
               alt="Company Logo"
               src={Logo}

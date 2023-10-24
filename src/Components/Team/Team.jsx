@@ -13,6 +13,7 @@ const Team = ({ cartLength }) => {
   Team.propTypes = {
     cartLength: PropTypes.number.isRequired,
   };
+
   return (
     <section className="team ">
       <MainNav darkMode cartLength={cartLength} />
@@ -22,16 +23,18 @@ const Team = ({ cartLength }) => {
         img={require("../../images/Team/Team-header.jpg.webp")}
       />
       <section className="team_members text-light text-center bg-dark">
-        <Container className=" py-5 ">
+        <Container className="py-5 ">
           <h2 className="h1-secondary fw-bold pt-5 mt-3 position-relative">
             <HeaderAccent />
             Meet Our strongest team
           </h2>
           <h5 className="fw-light">Find your perfect mentor! Join us!</h5>
           {/* ----------------------------------------------------- *------------------------ROW----*/}
-          <Row className=" py-5 team_members_container justify-content-md-center">
+          <Row className="py-5 team_members_container justify-content-md-center">
             {/* -----------------------------------------------------------------------------Memebers map backup */}
-            {members.map((id, fname, lname, position, img) => {
+            {members.map((person) => {
+              const { id, fname, lname, position, img } = person;
+
               return (
                 <Col
                   lg="4"
@@ -84,16 +87,15 @@ const Team = ({ cartLength }) => {
           </Row>
         </Container>
       </section>
+
       <section className="team_subscribe bg-dark text-light">
         <Container className="pt-5 pb-4">
           <Form className="text-light w-75 m-0 m-auto py-5">
             <Form.Group className="text-center pb-5">
-              <Form.Label>
-                <h2 className="h1-secondary fw-bold pt-5 mt-3 position-relative ">
-                  <HeaderAccent />
-                  subscribe
-                </h2>
-              </Form.Label>
+              <h2 className="h1-secondary fw-bold pt-5 mt-3 position-relative ">
+                <HeaderAccent />
+                subscribe
+              </h2>
               <Form.Text>
                 <h5 className="text-light fw-light mb-5">
                   Find your perfect mentor! Join us!
@@ -101,17 +103,23 @@ const Team = ({ cartLength }) => {
               </Form.Text>
               <Row className="gap-3 gap-lg-0">
                 <Col lg="4" md="12">
-                  <Form.Control placeholder="Name" />
+                  <Form.Label htmlFor="name" />
+                  <Form.Control
+                    autoComplete="true"
+                    id="name"
+                    placeholder="Name"
+                  />
                 </Col>
                 <Col lg="4" md="12">
-                  <Form.Control placeholder="Email" />
+                  <Form.Label htmlFor="email" />
+                  <Form.Control
+                    autoComplete="true"
+                    id="email"
+                    placeholder="Email"
+                  />
                 </Col>
                 <Col lg="2" md="12">
-                  <button
-                    type="submit"
-                    aria-label="Subscribe"
-                    className=" btn-light"
-                  >
+                  <a href="/Team" aria-label="Subscribe" className="btn-light">
                     Subscribe
                     <div className="button-container">
                       <Button
@@ -122,7 +130,7 @@ const Team = ({ cartLength }) => {
                         <span />
                       </Button>
                     </div>
-                  </button>
+                  </a>
                 </Col>
               </Row>
             </Form.Group>

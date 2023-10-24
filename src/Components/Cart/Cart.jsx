@@ -21,7 +21,7 @@ const Cart = ({
     increaseQty: PropTypes.func.isRequired,
     grandTotal: PropTypes.func.isRequired,
     cartLength: PropTypes.number.isRequired,
-    cart: PropTypes.number.isRequired,
+    cart: PropTypes.arrayOf.isRequired,
   };
 
   return (

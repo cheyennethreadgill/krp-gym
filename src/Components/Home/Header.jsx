@@ -12,19 +12,20 @@ const Header = ({ cartLength, cart }) => {
     cart: PropTypes.arrayOf.isRequired,
     cartLength: PropTypes.number.isRequired,
   };
+
   return (
     <section className="home_header bg-dark ">
       <MainNav cartLength={cartLength} cart={cart} />
       <Carousel data-bs-theme="dark" className="home_header_carousel ">
         {headerImgs.map((img) => {
           return (
-            <Carousel.Item className="" key={img.id}>
+            <Carousel.Item key={img.id}>
               <Image
+                fluid
                 height="100%"
                 width="100%"
                 alt={img.title}
                 src={img.img}
-                className=" home_header_carousel_img"
               />
               <Carousel.Caption className="home_header_carousel_caption ">
                 <h1 className="animate__animated animate__fadeIn">

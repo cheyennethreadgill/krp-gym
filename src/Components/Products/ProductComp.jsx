@@ -8,12 +8,14 @@ const ProductComp = ({ item, handleCartIncrease }) => {
     handleCartIncrease: PropTypes.func.isRequired,
     item: PropTypes.arrayOf.isRequired,
   };
+
   const { name, price, img, category } = item;
   return (
     <Col className="pb-5 d-flex align-items-stretch" lg="3" md="6" sm="12">
       <Card>
         <div className="home_shop_inner-overlay_container ">
           <Card.Img
+            fluid
             alt={name}
             src={img}
             className="img-fluid"

@@ -12542,4 +12542,23 @@ h6,
 .team_subscribe .form-control::placeholder {
   color: white;
   font-weight: 400;
+}
+
+.loading {
+  width: 5rem;
+  height: 5rem;
+  border: solid rgb(29, 29, 29) 3px;
+  border-radius: 10rem;
+  border-top-color: transparent;
+  animation: rotateLoad 1000ms ease infinite;
+  margin: 0 auto;
+}
+
+@keyframes rotateLoad {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }/*# sourceMappingURL=index.css.map */

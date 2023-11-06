@@ -6,6 +6,7 @@ import Routines from "./Routines";
 import HomeShop from "./HomeShop";
 import HomeTrainer from "./HomeTrainer";
 import Footer from "../Global/Footer";
+import Quotes from "./Quotes";
 
 const Home = ({ cart, cartLength, items, handleCartIncrease }) => {
   Home.propTypes = {
@@ -25,6 +26,7 @@ const Home = ({ cart, cartLength, items, handleCartIncrease }) => {
       <Newsletter />
       <Routines />
       <HomeTrainer />
+      <Quotes />
       <HomeShop
         items={items}
         handleCartIncrease={handleCartIncrease}

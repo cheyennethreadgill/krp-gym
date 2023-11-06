@@ -27,7 +27,7 @@ const Header = ({ cartLength, cart }) => {
                 alt={img.title}
                 src={img.img}
               />
-              <Carousel.Caption className="home_header_carousel_caption ">
+              <Carousel.Caption className="home_header_carousel_caption w-50 m-0 m-auto">
                 <h1 className="animate__animated animate__fadeIn">
                   <Image
                     height="100%"
@@ -39,14 +39,12 @@ const Header = ({ cartLength, cart }) => {
                 </h1>
                 <a
                   href="/PricingPlan"
-                  className="mt-3 btn-dark m-0 m-auto animate__animated animate__fadeInUp animate__delay-1s"
-                >
+                  className="mt-3 btn-dark m-0 m-auto animate__animated animate__fadeInUp animate__delay-1s">
                   View More
                   <div className="button-container">
                     <Button
                       aria-label="View More Pricing Plans"
-                      variant="outline-dark"
-                    >
+                      variant="outline-dark">
                       <span />
                     </Button>
                   </div>

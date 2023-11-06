@@ -15,7 +15,7 @@ const ProductComp = ({ item, handleCartIncrease }) => {
       <Card>
         <div className="home_shop_inner-overlay_container ">
           <Card.Img
-            fluid
+            
             alt={name}
             src={img}
             className="img-fluid"

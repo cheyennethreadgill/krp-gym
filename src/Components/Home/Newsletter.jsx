@@ -56,7 +56,7 @@ const Newsletter = () => {
                     <h2 className=" fs-1 fw-bold text-uppercase">Newsletter</h2>
                   </div>
                 </Form.Label>
-                <div className="input-container">
+                <Form.Group className="input-container">
                   <Form.Control
                     required
                     name="email"
@@ -65,6 +65,14 @@ const Newsletter = () => {
                     autoComplete="true"
                   />
 
+                <Form.Text>
+                  <p className="fw-semibold fs-6">
+                    Subscribe to our newsletter
+                  </p>
+                </Form.Text>
+                <Form.Control.Feedback type="invalid">
+                  Please provide a valid email address.
+                </Form.Control.Feedback>
                   <div className="button-container">
                     <Button
                       name="Subscribe"
@@ -74,15 +82,7 @@ const Newsletter = () => {
                       <span />
                     </Button>
                   </div>
-                </div>
-                <Form.Text>
-                  <p className="fw-semibold fs-6">
-                    Subscribe to our newsletter
-                  </p>
-                </Form.Text>
-                <Form.Control.Feedback type="invalid">
-                  Please provide a valid email address.
-                </Form.Control.Feedback>
+                </Form.Group>
               </Form.Group>
             </Form>
           </Col>

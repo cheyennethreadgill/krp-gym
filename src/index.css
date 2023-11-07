@@ -12073,6 +12073,10 @@ textarea.form-control-lg {
   height: 1.7em;
 }
 
+.was-validated .form-control:invalid {
+  background-image: none;
+}
+
 .input-container {
   position: relative;
 }

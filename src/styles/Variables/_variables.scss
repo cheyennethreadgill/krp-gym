@@ -72,6 +72,9 @@ $color-border: #4040403d;
 // forms------------------------------------------------------------------------------------------------
 
 // Form Control---------------------------------
+.was-validated .form-control:invalid {
+  background-image: none;
+}
 .input-container {
   position: relative;
 }

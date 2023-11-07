@@ -1,24 +1,61 @@
 .home {
+  
   &_header {
+
     .carousel {
+
       &-item {
         width: 100%;
-        height: 100vh;
+        height: 100vh;  
 
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
+
       }
 
+      &-indicators {
+        bottom: 74px;
+      }
+      &-indicators [data-bs-target] {
+          width: 10px;
+          height: 10px;
+      }
+
+      
+      .home_header_carousel-caption_container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        right: 15%;
+        bottom: -37%;
+        left: 15%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #fff;
+        text-align: center;
+      }
+
+      
+
       &-caption {
+
+        position: initial;
+        padding-top: 0;
+        padding-bottom: 0;
+        color: inherit;
+        text-align: inherit;
+
         @include breakpoints-down(md) {
           bottom: 50vh;
         }
       }
 
       &_logo {
+        max-width: 770px;
+
         @include breakpoints-down(sm) {
           width: 20rem !important;
         }

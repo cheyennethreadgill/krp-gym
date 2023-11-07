@@ -2,7 +2,7 @@ import React from "react";
 
 const HeaderAccent = () => {
   return (
-    <span className="position-absolute right-50 bottom-50">
+    <span className="position-absolute ">
       <svg
         className="qodef-svg--title-decoration qodef-title-decoration"
         xmlns="http://www.w3.org/2000/svg"

@@ -12404,10 +12404,39 @@ h6,
   -o-object-fit: cover;
      object-fit: cover;
 }
+.home_header .carousel-indicators {
+  bottom: 74px;
+}
+.home_header .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+}
+.home_header .carousel .home_header_carousel-caption_container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 15%;
+  bottom: -37%;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+.home_header .carousel-caption {
+  position: initial;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: inherit;
+  text-align: inherit;
+}
 @media screen and (max-width: 768px) {
   .home_header .carousel-caption {
     bottom: 50vh;
   }
+}
+.home_header .carousel_logo {
+  max-width: 770px;
 }
 @media screen and (max-width: 576px) {
   .home_header .carousel_logo {

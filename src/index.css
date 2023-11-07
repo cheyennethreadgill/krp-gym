@@ -12261,6 +12261,20 @@ h6,
   letter-spacing: -0.02em;
 }
 
+.title-container {
+  position: relative;
+}
+.title-container_characters {
+  position: absolute;
+  top: -62px;
+  left: -72px;
+  opacity: 0.06;
+  font-size: 6rem;
+  font-weight: bold;
+  letter-spacing: -8px;
+  transform: translateX(-600px);
+}
+
 .headers-info-jumbotron {
   position: relative;
 }

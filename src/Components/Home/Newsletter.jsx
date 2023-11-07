@@ -16,16 +16,45 @@ const Newsletter = () => {
     setValidated(true);
   };
 
+  document.addEventListener('scroll', animateNewsletter, false);
+
+  function animateNewsletter() {
+    var windPos = window.scrollY;
+    let char = document.querySelector('.title-container_characters');
+    const keframes = [{transform: 'translateX(0)'}];
+    const options = {
+      duration: 12000,
+    };
+
+    if (windPos >= 400) {
+      char.animate(keframes, options);
+    }
+  }
+
+
   return (
     <section className="home_newsletter pt-5 ">
       <Container className="pt-lg-5 ">
         <Row className="gap-3 gap-lg-5 ">
-          <Col lg="4" className="me-lg-5">
-            <Form noValidate validated={validated} onSubmit={handleSubmit}>
+          <Col
+            lg="4"
+            className="me-lg-5">
+            <Form
+              noValidate
+              validated={validated}
+              onSubmit={handleSubmit}>
               <Form.Group as={Col}>
                 <Form.Label htmlFor="email">
                   <HeaderAccent />
-                  <h2 className=" fs-1 fw-bold text-uppercase">Newsletter</h2>
+                  <div className="title-container">
+                    <div className="title-container_characters">
+                      <span className="title-container_characters_char">N</span>
+                      <span className="title-container_characters_char">E</span>
+                      <span className="title-container_characters_char">W</span>
+                      <span className="title-container_characters_char">S</span>
+                    </div>
+                    <h2 className=" fs-1 fw-bold text-uppercase">Newsletter</h2>
+                  </div>
                 </Form.Label>
                 <div className="input-container">
                   <Form.Control
@@ -41,8 +70,7 @@ const Newsletter = () => {
                       name="Subscribe"
                       variant="outline-dark"
                       aria-label="Subsribe to Newsletter"
-                      type="submit"
-                    >
+                      type="submit">
                       <span />
                     </Button>
                   </div>
@@ -58,7 +86,9 @@ const Newsletter = () => {
               </Form.Group>
             </Form>
           </Col>
-          <Col lg="6" className="ms-lg-5">
+          <Col
+            lg="6"
+            className="ms-lg-5">
             <h3 className="pb-3 fs-2 fw-bold">
               GET IN SHAPE WITH OUR PRO TRAINERS. REACH YOUR BODY GOALS IN NO
               TIME, CONTACT US

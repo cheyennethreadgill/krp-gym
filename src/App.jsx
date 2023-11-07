@@ -10,6 +10,8 @@ const App = () => {
   const [items, setItems] = useState(products);
   const darkMode = true;
 
+  
+
   // ----------------------------------------------------------------------------Remove Item
   const removeItem = (id) => {
     cart.find((item) => {

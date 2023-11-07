@@ -27,7 +27,7 @@ const Header = ({cartLength, cart}) => {
           return (
             <Carousel.Item
               key={img.id}
-              interval={100000}>
+              interval={4500}>
               <Image
                 fluid
                 height="100%"

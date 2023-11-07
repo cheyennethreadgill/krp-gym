@@ -2,10 +2,10 @@
   &_members {
     &_container {
       @include breakpoints-up(lg) {
-        height: 35rem;
+        height: 35em;
       }
       @include breakpoints-down(lg) {
-        gap: 3rem;
+        gap: 3em;
       }
     }
     &_info {
@@ -19,7 +19,7 @@
       text-align: left;
 
       svg {
-        width: 6rem;
+        width: 6em;
         top: -14%;
         right: 10%;
         z-index: 5;
@@ -31,7 +31,7 @@
       }
       svg {
         opacity: 0;
-        width: 6rem;
+        width: 6em;
         transition: all ease 300ms;
       }
       &_socials {
@@ -60,7 +60,7 @@
         z-index: 1;
 
         &_position {
-          font-size: 0.875rem;
+          font-size: 0.875em;
         }
       }
       &_img {
@@ -92,7 +92,7 @@
           z-index: 1;
 
           &_position {
-            font-size: 0.875rem;
+            font-size: 0.875em;
           }
         }
         &_img {

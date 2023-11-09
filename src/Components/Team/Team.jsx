@@ -101,7 +101,7 @@ const Team = ({ cartLength }) => {
                   Find your perfect mentor! Join us!
                 </h5>
               </Form.Text>
-              <Row className="gap-3 gap-lg-0">
+              <Row className="gap-3 gap-lg-0 align-items-end">
                 <Col lg="4" md="12">
                   <Form.Label htmlFor="name" />
                   <Form.Control
